@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Higiene digital en el puesto de trabajo moderno</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/vertical-carousel.css">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+  <nav class="navbar fixed-top">
+    <a class="navbar-brand" href="#">
+      <div class="logo"></div>
+    </a>
+
+    <div class="course-description">
+      <div class="course-title">Higiene digital en el puesto de trabajo moderno</div>
+    </div>
+
+    <div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
+        aria-controls="offcanvasMenu" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menú</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link active" data-bs-target="#carousel" data-bs-slide-to="0">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" data-bs-target="#carousel" data-bs-slide-to="1">Introducción</a></li>
+        <li class="nav-item"><a class="nav-link" data-bs-target="#carousel" data-bs-slide-to="2">Objetivos</a></li>
+        <li class="nav-item"><a class="nav-link" data-bs-target="#carousel" data-bs-slide-to="3">3. ¿Qué es la higiene digital?</a></li>
+        <li class="nav-item"><a class="nav-link" data-bs-target="#carousel" data-bs-slide-to="4">4. El puesto de trabajo remoto seguro</a></li>
+        <li class="nav-item"><a class="nav-link" data-bs-target="#carousel" data-bs-slide-to="5">5. Redes: hogar, público y VPN</a></li>
+        <li class="nav-item"><a class="nav-link" data-bs-target="#carousel" data-bs-slide-to="6">6. VPN corporativa</a></li>
+        <li class="nav-item"><a class="nav-link" data-bs-target="#carousel" data-bs-slide-to="7">7. Dispositivos móviles</a></li>
+        <li class="nav-item"><a class="nav-link" data-bs-target="#carousel" data-bs-slide-to="8">8. Microcaso</a></li>
+        <li class="nav-item"><a class="nav-link" data-bs-target="#carousel" data-bs-slide-to="9">9. Checklist diaria</a></li>
+        <li class="nav-item"><a class="nav-link" data-bs-target="#carousel" data-bs-slide-to="10">10. Si sospecho de un incidente</a></li>
+        <li class="nav-item"><a class="nav-link" data-bs-target="#carousel" data-bs-slide-to="11">11. Resumen</a></li>
+        <li class="nav-item"><a class="nav-link" data-bs-target="#carousel" data-bs-slide-to="12">12. Webgrafía y recursos</a></li>
+        <li class="nav-item"><a class="nav-link" data-bs-target="#carousel" data-bs-slide-to="13">Cierre</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="carousel" class="carousel slide vertical">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 0"></button>
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="4" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="5" aria-label="Slide 5"></button>
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="6" aria-label="Slide 6"></button>
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="7" aria-label="Slide 7"></button>
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="8" aria-label="Slide 8"></button>
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="9" aria-label="Slide 9"></button>
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="10" aria-label="Slide 10"></button>
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="11" aria-label="Slide 11"></button>
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="12" aria-label="Slide 12"></button>
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="13" aria-label="Slide 13"></button>
+    </div>
+    <div class="carousel-inner">
+
+      <!-- ============ 0. PORTADA / LANDING ============ -->
+      <!-- TODO sustituir imagen/video de fondo: persona trabajando con portátil y móvil en casa (loop opcional) -->
+      <div data-section="0" class="landing carousel-item active">
+        <div class="separador-amarillo"></div>
+        <div class="slide-container">
+          <div class="overlay" style="
+    position: absolute;
+    background: rgba(0,0,0,.5);
+    height: 100%;
+    width: 100%;
+">
+          <div class="animate__animated animate__fadeInRight">
+            <p class="landing_title">Higiene digital en el puesto de trabajo moderno</p>
+            <p class="landing_subtitle">Teletrabajo seguro, VPN corporativa y protección de dispositivos móviles</p>
+            <p class="landing_text">Pequeños hábitos diarios para reducir riesgos en cada conexión.</p>
+          </div>
+          <button class="landing_btn animate__animated animate__fadeInUp" data-bs-target="#carousel"
+            data-bs-slide-to="1">Comenzar</button>
+        </div>
+      </div></div>
+
+      <!-- ============ 1. INTRODUCCIÓN (2 columnas + destacado 68%) ============ -->
+      <div data-section="1" class="carousel-item">
+        <div class="title-section">
+          <img src="images/vuela_icon_introduccion.svg" alt="Introducción" width="60">
+          <h1>La ciberseguridad empieza en tus rutinas</h1>
+        </div>
+        <div class="slide-container">
+          <div class="row row-cols-1 row-cols-md-2 align-items-stretch">
+            <div class="col justify-content-md-center">
+              <p>Trabajar desde casa, conectarse desde una red externa, consultar el correo en el móvil o acceder a herramientas corporativas fuera de la oficina ya forma parte del día a día. Cada una de estas acciones puede ser segura o convertirse en una <strong>puerta de entrada a un incidente</strong>.</p>
+              <p>La higiene digital consiste en aplicar <strong>hábitos sencillos, constantes y conscientes</strong> para proteger la información, los dispositivos y los accesos de trabajo.</p>
+            </div>
+            <div class="col d-flex flex-column">
+              <!-- TODO sustituir imagen: videollamada / teletrabajo -->
+              <img src="images/content/img001.jpg" alt="Teletrabajo y videollamada">
+            </div>
+          </div>
+          <div class="destacado destacado-amarillo p-0 mt-3">
+            <img src="images/vuela_icon_informacion.svg" alt="Información">
+            <div class="destacado-contenido">
+              <p class="destacado-titulo">Dato</p>
+              <p class="destacado-texto">El <strong>68% de los incidentes</strong> afectan a ciudadanos y empleados de forma individual.</p>
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col">
+              <p>Por eso, la seguridad no depende solo de la tecnología: también depende de <strong>cómo nos conectamos, qué comprobamos y cuándo avisamos</strong>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============ 2. OBJETIVOS (imagen lateral + lista) ============ -->
+      <div data-section="2" class="carousel-item">
+        <div class="title-section">
+          <img src="images/vuela_icon_objetivos.svg" alt="Objetivos" width="50">
+          <h1>Objetivos</h1>
+        </div>
+        <div class="slide-container">
+          <div class="row row-cols-1 row-cols-md-2 align-items-stretch">
+            <div class="col mb-0">
+              <!-- TODO sustituir imagen: escritorio remoto ordenado con portátil, móvil y candado digital -->
+              <img src="images/content/objetivos.png" alt="Objetivos">
+            </div>
+            <div class="col objetivos">
+              <p>Al finalizar esta píldora sabrás:</p>
+              <ul>
+                <li>Identificar <strong>riesgos habituales del teletrabajo</strong> y del trabajo en movilidad.</li>
+                <li>Reconocer <strong>cuándo y cómo utilizar la VPN corporativa</strong>.</li>
+                <li>Aplicar buenas prácticas para <strong>proteger portátiles y dispositivos móviles</strong>.</li>
+                <li>Actuar de forma adecuada <strong>ante una sospecha de incidente</strong>.</li>
+              </ul>
+              <p><strong>No necesitas ser especialista técnico:</strong> necesitas incorporar rutinas seguras a tu jornada diaria.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============ 3. ¿QUÉ ES LA HIGIENE DIGITAL? (destacado concepto + texto + lista) ============ -->
+      <div data-section="3" class="carousel-item">
+        <div class="title-section">
+          <img src="images/vuela_icon_contenido.svg" alt="Contenido" width="60">
+          <h1>¿Qué es la higiene digital?</h1>
+        </div>
+        <div class="slide-container">
+          <div class="destacado destacado-amarillo p-0">
+            <img src="images/vuela_icon_informacion.svg" alt="Información">
+            <div class="destacado-contenido">
+              <p class="destacado-titulo">Concepto</p>
+              <p class="destacado-texto">Higiene digital = <strong>hábitos diarios para reducir riesgos</strong>.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col d-flex flex-column">
+              <p>Igual que otras rutinas preventivas ayudan a evitar problemas, la higiene digital ayuda a <strong>reducir la exposición a ciberincidentes</strong>. No se trata de una acción puntual, sino de una forma de trabajar: revisar conexiones, proteger dispositivos, verificar mensajes y comunicar cualquier sospecha.</p>
+              <h2 class="mt-3">Cinco hábitos</h2>
+              <ul>
+                <li><strong>Actualizar.</strong></li>
+                <li><strong>Bloquear.</strong></li>
+                <li><strong>Verificar.</strong></li>
+                <li><strong>Separar.</strong></li>
+                <li><strong>Reportar.</strong></li>
+              </ul>
+              <p><strong>La seguridad se construye con pequeñas decisiones repetidas cada día.</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============ 4. EL PUESTO DE TRABAJO REMOTO SEGURO (botones numerados sobre imagen + modales) ============ -->
+      <div data-section="4" class="carousel-item">
+        <div class="title-section">
+          <img src="images/vuela_icon_contenido.svg" alt="Contenido" width="50">
+          <h1>El puesto de trabajo remoto seguro</h1>
+        </div>
+        <div class="slide-container">
+          <div class="row">
+            <div class="col">
+              <p>Pulsa en cada punto crítico para ver cómo protegerlo.</p>
+            </div>
+          </div>
+          <!-- TODO sustituir imagen: infografía de escritorio remoto (portátil, router, móvil, documentos, pantalla bloqueada) con 5 zonas numeradas -->
+          <div style="position: relative;" class="col-md-8 mx-auto">
+            <img src="images/12345.png" width="100%" alt="Puesto de trabajo remoto: 5 puntos críticos">
+
+            <button type="button" class="btn-modal-number" style="top: 24%; left:21%; width: 9%; height: 47%;"
+              data-bs-toggle="modal" data-bs-target="#punto1">&nbsp;</button>
+            <div class="modal fade" id="punto1" tabindex="-1" aria-labelledby="punto1Label" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title" id="punto1Label">1. Router y Wi-Fi</h1>
+                    <button type="button" class="btn-close btn-close-modal" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Utiliza una red Wi-Fi protegida con contraseña robusta. Evita redes abiertas o desconocidas para acceder a servicios corporativos. Mantén el router actualizado y cambia las credenciales por defecto.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button type="button" class="btn-modal-number" style="top: 24%; left: 33%; width: 9%; height: 47%;"
+              data-bs-toggle="modal" data-bs-target="#punto2">&nbsp;</button>
+            <div class="modal fade" id="punto2" tabindex="-1" aria-labelledby="punto2Label" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title" id="punto2Label">2. Portátil corporativo</h1>
+                    <button type="button" class="btn-close btn-close-modal" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Trabaja preferentemente con el equipo facilitado por la organización. Mantén sistema y aplicaciones actualizadas, no instales software no autorizado y bloquea la pantalla cuando te ausentes.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button type="button" class="btn-modal-number" style="top: 24%; left: 45%; width: 9%; height: 47%;"
+              data-bs-toggle="modal" data-bs-target="#punto3">&nbsp;</button>
+            <div class="modal fade" id="punto3" tabindex="-1" aria-labelledby="punto3Label" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title" id="punto3Label">3. VPN</h1>
+                    <button type="button" class="btn-close btn-close-modal" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Activa la VPN corporativa siempre que accedas a recursos internos o cuando lo indique la política de seguridad. No la desactives para ganar velocidad si estás trabajando con información de la organización.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button type="button" class="btn-modal-number" style="top: 24%; left: 57%; width: 9%; height: 47%;"
+              data-bs-toggle="modal" data-bs-target="#punto4">&nbsp;</button>
+            <div class="modal fade" id="punto4" tabindex="-1" aria-labelledby="punto4Label" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title" id="punto4Label">4. Móvil</h1>
+                    <button type="button" class="btn-close btn-close-modal" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Protege el móvil con bloqueo seguro, biometría o PIN robusto. Revisa permisos de las aplicaciones y comunica de inmediato la pérdida, robo o comportamiento extraño del dispositivo.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button type="button" class="btn-modal-number" style="top: 24%; left: 69%; width: 9%; height: 47%;"
+              data-bs-toggle="modal" data-bs-target="#punto5">&nbsp;</button>
+            <div class="modal fade" id="punto5" tabindex="-1" aria-labelledby="punto5Label" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title" id="punto5Label">5. Documentos y pantalla</h1>
+                    <button type="button" class="btn-close btn-close-modal" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Evita dejar documentos visibles, no compartas pantalla con información sensible innecesaria y cierra sesiones al finalizar. En espacios compartidos, cuida también lo que otras personas pueden ver u oír.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="click mt-3">Pulsa en los botones para ver el contenido.</p>
+        </div>
+      </div>
+
+      <!-- ============ 5. REDES: HOGAR, PÚBLICO Y VPN (pestañas) ============ -->
+      <div data-section="5" class="carousel-item">
+        <div class="title-section">
+          <img src="images/vuela_icon_contenido.svg" alt="Contenido" width="50">
+          <h1>No todas las redes protegen igual</h1>
+        </div>
+        <div class="slide-container">
+          <div class="row">
+            <div class="col">
+              <p>Antes de acceder a información de trabajo, revisa <strong>desde dónde te conectas</strong> y qué nivel de protección necesitas.</p>
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col">
+              <div class="d-sm-flex align-items-start">
+                <div class="nav flex-sm-column me-sm-3 col-sm-4" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                  <button class="tab-link active" id="tab-1" data-bs-toggle="pill" data-bs-target="#tab-1-cont" type="button" role="tab" aria-selected="true">Red doméstica</button>
+                  <button class="tab-link" id="tab-2" data-bs-toggle="pill" data-bs-target="#tab-2-cont" type="button" role="tab" aria-selected="false">Red pública</button>
+                  <button class="tab-link" id="tab-3" data-bs-toggle="pill" data-bs-target="#tab-3-cont" type="button" role="tab" aria-selected="false">VPN corporativa</button>
+                </div>
+                <div class="tab-content" id="v-pills-tabContent">
+                  <div class="tab-pane fade show active" id="tab-1-cont" role="tabpanel" tabindex="0">
+                    <span class="tab-title">Red doméstica</span><br>
+                    <p>Puede ser adecuada para teletrabajar <strong>si está protegida</strong>. Usa una contraseña Wi-Fi robusta, evita compartirla sin control, mantén actualizado el router y separa, cuando sea posible, los dispositivos personales de los profesionales.</p>
+                    <div class="destacado destacado-amarillo p-0 mt-2">
+                      <img src="images/vuela_icon_informacion.svg" alt="Consejo">
+                      <div class="destacado-contenido">
+                        <p class="destacado-texto">Si el router conserva la contraseña de fábrica o no se actualiza desde hace años, tu entorno de trabajo puede estar más expuesto.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="tab-2-cont" role="tabpanel" tabindex="0">
+                    <span class="tab-title">Red pública</span><br>
+                    <p>Las redes de cafeterías, hoteles, estaciones o aeropuertos pueden ser útiles para navegar, pero <strong>no son recomendables para acceder a datos sensibles</strong> o herramientas internas sin protección adicional.</p>
+                    <div class="destacado destacado-amarillo p-0 mt-2">
+                      <img src="images/vuela_icon_informacion.svg" alt="Consejo">
+                      <div class="destacado-contenido">
+                        <p class="destacado-texto">Evita introducir credenciales corporativas en redes abiertas. Si no puedes evitar conectarte, usa la VPN corporativa y extrema la comprobación de páginas, enlaces y avisos.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="tab-3-cont" role="tabpanel" tabindex="0">
+                    <span class="tab-title">VPN corporativa</span><br>
+                    <p>La VPN crea un <strong>canal cifrado</strong> entre tu dispositivo y la organización. Ayuda a proteger la conexión cuando accedes a recursos internos desde fuera de la red corporativa.</p>
+                    <div class="destacado destacado-amarillo p-0 mt-2">
+                      <img src="images/vuela_icon_informacion.svg" alt="Consejo">
+                      <div class="destacado-contenido">
+                        <p class="destacado-texto">La VPN no sustituye al sentido común: sigue verificando enlaces, remitentes, permisos y avisos de seguridad.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="click mt-2">Pulsa en las pestañas para ver el contenido.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============ 6. VPN CORPORATIVA: USOS CORRECTOS E INCORRECTOS (flip cards) ============ -->
+      <div data-section="6" class="carousel-item">
+        <div class="title-section">
+          <img src="images/vuela_icon_contenido.svg" alt="Contenido" width="50">
+          <h1>La VPN protege si se usa bien</h1>
+        </div>
+        <div class="slide-container">
+          <div class="row">
+            <div class="col">
+              <p>Pulsa cada tarjeta para descubrir el hábito seguro.</p>
+            </div>
+          </div>
+          <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <div class="card">
+                      <!-- TODO sustituir imagen tarjeta -->
+                      <img src="images/content/img002.jpg" class="card-img-top" alt="Conectarse sin VPN">
+                      <div class="card-body">
+                        <h5 class="card-title">«Me conecto sin VPN porque va más rápido.»</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flip-card-back">
+                    <div class="card">
+                      <div class="card-body d-flex flex-column align-items-center">
+                        <h5 class="card-title">Hábito seguro</h5>
+                        <p>Si vas a acceder a recursos internos o trabajar con información corporativa, activa la VPN según la política de la organización. <strong>La velocidad no debe estar por encima de la seguridad.</strong></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <div class="card">
+                      <!-- TODO sustituir imagen tarjeta -->
+                      <img src="images/content/img003.jpg" class="card-img-top" alt="Usar la VPN solo a veces">
+                      <div class="card-body">
+                        <h5 class="card-title">«Uso la VPN solo a veces.»</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flip-card-back">
+                    <div class="card">
+                      <div class="card-body d-flex flex-column align-items-center">
+                        <h5 class="card-title">Hábito seguro</h5>
+                        <p>Usa la VPN de forma <strong>constante cuando proceda</strong>. La protección intermitente deja ventanas de exposición, especialmente en redes externas o poco confiables.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <div class="card">
+                      <!-- TODO sustituir imagen tarjeta -->
+                      <img src="images/content/img004.jpg" class="card-img-top" alt="Compartir credenciales">
+                      <div class="card-body">
+                        <h5 class="card-title">«Comparto mis credenciales para que otra persona pueda entrar.»</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flip-card-back">
+                    <div class="card">
+                      <div class="card-body d-flex flex-column align-items-center">
+                        <h5 class="card-title">Hábito seguro</h5>
+                        <p>Las credenciales son <strong>personales e intransferibles</strong>. Compartirlas impide saber quién accede realmente y puede comprometer servicios internos.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <div class="card">
+                      <!-- TODO sustituir imagen tarjeta -->
+                      <img src="images/content/img005.jpg" class="card-img-top" alt="Desactivar avisos de seguridad">
+                      <div class="card-body">
+                        <h5 class="card-title">«Desactivo avisos de seguridad porque molestan.»</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flip-card-back">
+                    <div class="card">
+                      <div class="card-body d-flex flex-column align-items-center">
+                        <h5 class="card-title">Hábito seguro</h5>
+                        <p>Lee los avisos y consulta si no los entiendes. Un aviso puede indicar <strong>certificado no válido, conexión insegura, aplicación desactualizada o intento de suplantación</strong>.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-2">
+            <p class="click">Pulsa sobre las tarjetas para ver el contenido.</p>
+          </div>
+          <div class="row mt-2">
+            <div class="col">
+              <p><strong>Una VPN mal utilizada puede crear una falsa sensación de seguridad.</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============ 7. DISPOSITIVOS MÓVILES (acordeón) ============ -->
+      <div data-section="7" class="carousel-item">
+        <div class="title-section">
+          <img src="images/vuela_icon_contenido.svg" alt="Contenido" width="50">
+          <h1>El móvil también es puesto de trabajo</h1>
+        </div>
+        <div class="slide-container">
+          <div class="row row-cols-1 row-cols-md-2 g-4 align-items-start">
+            <div class="col d-flex flex-column">
+              <p>Desde el móvil leemos correos, recibimos <strong>códigos de verificación</strong>, accedemos a documentos y confirmamos operaciones. Por eso, su protección es tan importante como la del ordenador.</p>
+              <!-- TODO sustituir imagen: persona consultando correo corporativo en el móvil -->
+              <img src="images/content/img007.jpg" alt="Uso del móvil corporativo" style="display:block; width:100%; height:auto; margin-top:auto; padding-top:16px;">
+            </div>
+            <div class="col">
+              <div class="accordion" id="acordeonMoviles">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#mov1" aria-expanded="true" aria-controls="mov1">Bloqueo y biometría</button>
+                  </h2>
+                  <div id="mov1" class="accordion-collapse collapse show" data-bs-parent="#acordeonMoviles">
+                    <div class="accordion-body">
+                      <p>Activa bloqueo de pantalla automático, PIN robusto, contraseña o biometría. Evita patrones fáciles y no dejes el dispositivo desbloqueado sobre la mesa.</p>
+                      <p class="alerta"><strong>Alerta:</strong> un móvil desbloqueado puede dar acceso directo al correo, a códigos de verificación y a información sensible.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mov2" aria-expanded="false" aria-controls="mov2">Actualizaciones</button>
+                  </h2>
+                  <div id="mov2" class="accordion-collapse collapse" data-bs-parent="#acordeonMoviles">
+                    <div class="accordion-body">
+                      <p>Mantén actualizado el sistema operativo y las aplicaciones. Las actualizaciones corrigen vulnerabilidades que podrían ser aprovechadas por atacantes.</p>
+                      <p class="alerta"><strong>Alerta:</strong> posponer actualizaciones durante semanas aumenta el riesgo de infección, robo de datos o fallos de seguridad.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mov3" aria-expanded="false" aria-controls="mov3">Apps y permisos</button>
+                  </h2>
+                  <div id="mov3" class="accordion-collapse collapse" data-bs-parent="#acordeonMoviles">
+                    <div class="accordion-body">
+                      <p>Instala aplicaciones solo desde fuentes oficiales y revisa los permisos que solicitan. Una app de apariencia inocente puede pedir acceso innecesario a contactos, archivos, ubicación o cámara.</p>
+                      <p class="alerta"><strong>Alerta:</strong> si una app pide permisos que no necesita para funcionar, desconfía y consulta antes de instalarla.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mov4" aria-expanded="false" aria-controls="mov4">Pérdida o robo</button>
+                  </h2>
+                  <div id="mov4" class="accordion-collapse collapse" data-bs-parent="#acordeonMoviles">
+                    <div class="accordion-body">
+                      <p>Comunica de inmediato la pérdida o robo del dispositivo, aunque creas que está bloqueado. La organización puede ayudarte a revocar accesos, localizarlo o borrar información de forma remota.</p>
+                      <p class="alerta"><strong>Alerta:</strong> avisar tarde puede permitir accesos no autorizados a correo, documentos o servicios corporativos.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="click mt-3">Pulsa en los botones para ver el contenido.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============ 8. MICROCASO (botón + modal checklist) ============ -->
+      <div data-section="8" class="carousel-item">
+        <div class="title-section">
+          <img src="images/vuela_icon_ejercicio.svg" alt="Microcaso" width="50">
+          <h1>Microcaso: «Solo era un correo desde casa»</h1>
+        </div>
+        <div class="slide-container">
+          <div class="row row-cols-1 row-cols-md-2 align-items-stretch">
+            <div class="col d-flex flex-column">
+              <p>Estás fuera de casa, recibes un correo urgente y necesitas acceder a una herramienta interna. Estás usando una <strong>red Wi-Fi que no es la habitual</strong> y el mensaje incluye un enlace directo para iniciar sesión.</p>
+              <h2 class="mt-3">¿Qué revisarías antes de entrar?</h2>
+              <div class="row mt-2">
+                <div class="col d-flex justify-content-center">
+                  <button type="button" class="btn-modal info" data-bs-toggle="modal" data-bs-target="#microcasoModal">
+                    <strong>Analizar el caso</strong>
+                  </button>
+                </div>
+              </div>
+              <p class="click mt-3">Pulsa en el botón para ampliar el contenido.</p>
+            </div>
+            <div class="col d-flex flex-column">
+              <!-- TODO sustituir imagen: empleado con correo urgente durante videollamada en cafetería / Wi-Fi público -->
+              <img src="images/content/img006.jpg" alt="Correo urgente desde una red pública" style="display:block; width:100%; height:auto; margin-top:auto;">
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="microcasoModal" tabindex="-1" aria-labelledby="microcasoModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title" id="microcasoModalLabel">Checklist antes de entrar</h1>
+                <button type="button" class="btn-close btn-close-modal" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <ul>
+                  <li><strong>Red:</strong> ¿estás en una red segura? Si es pública o desconocida, evita introducir credenciales sin VPN.</li>
+                  <li><strong>VPN:</strong> ¿está activa si vas a acceder a recursos internos? Comprueba el estado antes de iniciar sesión.</li>
+                  <li><strong>Remitente:</strong> ¿el correo procede de una dirección legítima? Revisa dominio, tono, urgencia y posibles errores.</li>
+                  <li><strong>Enlace:</strong> ¿te lleva a una página oficial? Mejor accede escribiendo la dirección habitual o desde favoritos corporativos.</li>
+                  <li><strong>Dispositivo:</strong> ¿es el equipo autorizado y está actualizado? Evita usar dispositivos compartidos o sin control.</li>
+                  <li><strong>Reporte:</strong> si algo no encaja, no continúes. Captura la información necesaria y avisa por el canal interno definido.</li>
+                </ul>
+                <p><strong>La urgencia es una técnica habitual de engaño. Antes de actuar rápido, revisa con calma.</strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============ 9. CHECKLIST DE HIGIENE DIGITAL DIARIA (acordeón con listas) ============ -->
+      <div data-section="9" class="carousel-item">
+        <div class="title-section">
+          <img src="images/vuela_icon_contenido.svg" alt="Contenido" width="50">
+          <h1>Checklist de higiene digital diaria</h1>
+        </div>
+        <div class="slide-container">
+          <div class="row">
+            <div class="col">
+              <p>Una rutina breve al inicio y al final de la jornada puede <strong>evitar muchos incidentes</strong>.</p>
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col">
+              <div class="accordion" id="acordeonChecklist">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#chk1" aria-expanded="true" aria-controls="chk1">Antes de empezar</button>
+                  </h2>
+                  <div id="chk1" class="accordion-collapse collapse show" data-bs-parent="#acordeonChecklist">
+                    <div class="accordion-body">
+                      <p>Comprueba que el equipo está actualizado, que la conexión es segura, que la VPN está activa si procede y que el móvil tiene bloqueo configurado.</p>
+                      <ul>
+                        <li>Actualizaciones revisadas.</li>
+                        <li>Red adecuada.</li>
+                        <li>VPN activa si corresponde.</li>
+                        <li>Móvil protegido.</li>
+                        <li>Mesa y pantalla sin información expuesta.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#chk2" aria-expanded="false" aria-controls="chk2">Durante la jornada</button>
+                  </h2>
+                  <div id="chk2" class="accordion-collapse collapse" data-bs-parent="#acordeonChecklist">
+                    <div class="accordion-body">
+                      <p>Desconfía de mensajes urgentes, verifica enlaces antes de iniciar sesión, no compartas credenciales, bloquea la pantalla al ausentarte y usa únicamente herramientas autorizadas.</p>
+                      <ul>
+                        <li>Correo revisado con cautela.</li>
+                        <li>Enlaces verificados.</li>
+                        <li>Credenciales no compartidas.</li>
+                        <li>Pantalla bloqueada en ausencias.</li>
+                        <li>Información guardada en ubicaciones corporativas.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#chk3" aria-expanded="false" aria-controls="chk3">Al terminar</button>
+                  </h2>
+                  <div id="chk3" class="accordion-collapse collapse" data-bs-parent="#acordeonChecklist">
+                    <div class="accordion-body">
+                      <p>Cierra sesiones, guarda documentos donde corresponda, bloquea o apaga el equipo y deja los dispositivos fuera del alcance de terceros.</p>
+                      <ul>
+                        <li>Sesiones cerradas.</li>
+                        <li>Documentos guardados.</li>
+                        <li>Equipo bloqueado o apagado.</li>
+                        <li>Móvil localizado y protegido.</li>
+                        <li>Incidencias comunicadas si las hubo.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="click mt-3">Pulsa en los botones para ver el contenido.</p>
+              <p class="mt-2"><strong>La higiene digital funciona cuando se convierte en hábito, no cuando se recuerda solo después de un problema.</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============ 10. ¿QUÉ HAGO SI SOSPECHO DE UN INCIDENTE? (destacado + botón modal pasos) ============ -->
+      <div data-section="10" class="carousel-item">
+        <div class="title-section">
+          <img src="images/vuela_bg_warning_decoration.svg" alt="Incidente" width="50">
+          <h1>¿Qué hago si sospecho de un incidente?</h1>
+        </div>
+        <div class="slide-container">
+          <!-- TODO sustituir imagen de fondo opcional: alerta suave en pantalla de portátil -->
+          <div class="destacado destacado-amarillo p-0">
+            <img src="images/vuela_icon_informacion.svg" alt="Aviso">
+            <div class="destacado-contenido">
+              <p class="destacado-titulo">Recuerda</p>
+              <p class="destacado-texto"><strong>No lo ocultes. No improvises. Comunícalo rápido.</strong></p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <p>Una sospecha comunicada a tiempo puede evitar que un problema pequeño se convierta en un <strong>incidente mayor</strong>.</p>
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col d-flex justify-content-center">
+              <button type="button" class="btn-modal info" data-bs-toggle="modal" data-bs-target="#incidenteModal">
+                <strong>Ver pasos</strong>
+              </button>
+            </div>
+          </div>
+          <p class="click mt-3">Pulsa en el botón para ampliar el contenido.</p>
+        </div>
+
+        <div class="modal fade" id="incidenteModal" tabindex="-1" aria-labelledby="incidenteModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title" id="incidenteModalLabel">Pasos ante una sospecha</h1>
+                <button type="button" class="btn-close btn-close-modal" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <ul>
+                  <li><strong>1. Detén la acción sospechosa.</strong> No sigas introduciendo datos, descargando archivos o aceptando avisos si algo no encaja.</li>
+                  <li><strong>2. Desconecta si procede.</strong> Si crees que el equipo está comprometido, sigue el protocolo interno: puede ser necesario desconectar la red, pero no apagues ni borres información sin indicación.</li>
+                  <li><strong>3. No borres evidencias.</strong> Conserva correos, capturas, mensajes, horarios, nombres de archivos o cualquier dato que ayude a analizar lo ocurrido.</li>
+                  <li><strong>4. Avisa por el canal interno definido.</strong> Utiliza el procedimiento de la organización: CAU, equipo de seguridad, responsable TIC o canal de incidencias.</li>
+                  <li><strong>5. Cambia credenciales solo cuando te lo indiquen.</strong> Hacerlo desde un equipo comprometido podría exponer la nueva contraseña.</li>
+                </ul>
+                <p><strong>Reportar no es fallar: es proteger.</strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============ 11. RESUMEN (2 columnas + imagen) ============ -->
+      <div data-section="11" class="carousel-item">
+        <div class="title-section">
+          <img src="images/vuela_icon_objetivos.svg" alt="Resumen" width="50">
+          <h1>Cinco hábitos clave</h1>
+        </div>
+        <div class="slide-container">
+          <div class="row row-cols-1 row-cols-md-2 align-items-stretch">
+            <div class="col objetivos">
+              <ul>
+                <li><strong>Conéctate de forma segura.</strong> Revisa la red antes de trabajar con información corporativa.</li>
+                <li><strong>Usa la VPN cuando corresponda.</strong> Actívala para acceder a recursos internos o cuando lo establezca la organización.</li>
+                <li><strong>Actualiza y bloquea dispositivos.</strong> Un equipo sin actualizar o una pantalla desbloqueada aumentan el riesgo.</li>
+                <li><strong>Separa usos personales y laborales.</strong> Evita mezclar cuentas, aplicaciones, documentos y dispositivos sin control.</li>
+                <li><strong>Reporta cualquier sospecha.</strong> Avisar pronto ayuda a contener incidentes y proteger a otras personas.</li>
+              </ul>
+              <p><strong>La higiene digital es una responsabilidad compartida que empieza en cada persona y en cada conexión.</strong></p>
+            </div>
+            <div class="col">
+              <!-- TODO sustituir imagen: escudo con portátil, móvil y nube -->
+              <img src="images/content/resumen.png" alt="Resumen" class="imagen">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============ 12. WEBGRAFÍA Y RECURSOS ============ -->
+      <div data-section="12" class="carousel-item">
+        <div class="title-section">
+          <img src="images/vuela_icon_ejercicio.svg" alt="Webgrafía" width="50">
+          <h1>Recursos recomendados</h1>
+        </div>
+        <div class="slide-container">
+          <div class="row">
+            <div class="col">
+              <!-- TODO sustituir por los enlaces oficiales definidos por la entidad responsable de la formación -->
+              <ul>
+                <li><a href="https://www.incibe.es/" target="_blank"><strong>INCIBE - Teletrabajo seguro:</strong> recomendaciones para trabajar en remoto con mayor protección.</a></li>
+                <li><a href="https://www.incibe.es/" target="_blank"><strong>INCIBE - Protección de dispositivos:</strong> pautas para mantener equipos y móviles seguros.</a></li>
+                <li><a href="https://www.ccn-cert.cni.es/" target="_blank"><strong>CCN-CERT - Buenas prácticas de ciberseguridad:</strong> guías y recomendaciones para entornos profesionales.</a></li>
+                <li><strong>Política interna de seguridad de la organización:</strong> normas concretas sobre VPN, dispositivos, accesos y reporte de incidentes.</li>
+                <li><strong>Canal interno de soporte o ciberseguridad:</strong> punto de contacto para dudas, avisos y sospechas.</li>
+              </ul>
+              <p class="click mt-3">Pulsa en los enlaces para ampliar contenido.</p>
+              <p class="mt-2"><em>Nota: sustituir o completar estos recursos con los enlaces oficiales definidos por la entidad responsable de la formación.</em></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============ 13. CIERRE ============ -->
+      <div data-section="13" class="carousel-item">
+        <div class="title-section">
+          <img src="images/vuela_bg_warning_decoration.svg" alt="Cierre" width="60">
+          <h1>Cierre</h1>
+        </div>
+        <div class="slide-container">
+          <div class="container">
+            <div class="row cierre align-items-center row-cols-1 row-cols-md-2">
+              <div class="col p-4 cierre-texto">
+                <h1 class="text-center">Enhorabuena</h1>
+                <h2 class="text-center mt-4">Has finalizado la píldora.</h2>
+                <p class="text-center mt-4"><strong>Recuerda: la seguridad empieza en cada conexión.</strong></p>
+                <p class="text-center mt-4">Cada red que eliges, cada actualización que aplicas, cada pantalla que bloqueas y cada sospecha que comunicas ayudan a proteger tu trabajo, a tu organización y a las personas a las que prestas servicio.</p>
+              </div>
+              <div class="col align-self-end">
+                <!-- TODO sustituir imagen: persona cerrando el portátil con sensación de control y seguridad -->
+                <img src="images/img_cierre.png" alt="Cierre">
+              </div>
+            </div>
+            <div class="row d-flex justify-content-center mt-5">
+              <div class="col-5">
+                <img src="images/vuela_bg_title_decoration.svg" alt="Decoracion cierre">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel-controls">
+    <button class="control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </div>
+
+  <div class="footer"><img src="images/vuela_pastilla_logos.svg" alt=""></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/ejercicios.js"></script>
+</body>
+
+</html>

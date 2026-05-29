@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uso ético y seguro de la inteligencia artificial</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/vertical-carousel.css">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+  <nav class="navbar fixed-top">
+    <a class="navbar-brand" href="#">
+      <div class="logo"></div>
+    </a>
+
+    <div class="course-description">
+      <div class="course-title">Uso ético y seguro de la inteligencia artificial</div>
+    </div>
+
+    <div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
+        aria-controls="offcanvasMenu" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menú</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link active" data-bs-target="#carousel" data-bs-slide-to="0">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" data-bs-target="#carousel" data-bs-slide-to="1">Introducción</a></li>
+        <li class="nav-item"><a class="nav-link" data-bs-target="#carousel" data-bs-slide-to="2">Objetivos</a></li>
+        <li class="nav-item"><a class="nav-link" data-bs-target="#carousel" data-bs-slide-to="3">1. Fundamentos técnicos</a></li>
+        <li class="nav-item"><a class="nav-link" data-bs-target="#carousel" data-bs-slide-to="4">2. Reglamento europeo</a></li>
+        <li class="nav-item"><a class="nav-link" data-bs-target="#carousel" data-bs-slide-to="5">3. Ética y gobernanza</a></li>
+        <li class="nav-item"><a class="nav-link" data-bs-target="#carousel" data-bs-slide-to="6">4. Modelos de lenguaje pequeños y amenazas</a></li>
+        <li class="nav-item"><a class="nav-link" data-bs-target="#carousel" data-bs-slide-to="7">5. Defensa y ENS</a></li>
+        <li class="nav-item"><a class="nav-link" data-bs-target="#carousel" data-bs-slide-to="8">6. Conclusiones</a></li>
+        <li class="nav-item"><a class="nav-link" data-bs-target="#carousel" data-bs-slide-to="9">7. Webgrafía</a></li>
+        <li class="nav-item"><a class="nav-link" data-bs-target="#carousel" data-bs-slide-to="10">Cierre</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="carousel" class="carousel slide vertical">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 0"></button>
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="4" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="5" aria-label="Slide 5"></button>
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="6" aria-label="Slide 6"></button>
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="7" aria-label="Slide 7"></button>
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="8" aria-label="Slide 8"></button>
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="9" aria-label="Slide 9"></button>
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="10" aria-label="Slide 10"></button>
+    </div>
+    <div class="carousel-inner">
+      <div data-section="0" class="landing carousel-item active">
+        <div class="separador-amarillo"></div>
+        <div class="slide-container">
+          <div class="overlay" style="
+    position: absolute;
+    background: rgba(0,0,0,.5);
+    height: 100%;
+    width: 100%;
+">
+          <div class="animate__animated animate__fadeInRight">
+            <p class="landing_title">Uso ético y seguro de la inteligencia artificial en la administración pública</p>
+          </div>
+          <button class="landing_btn animate__animated animate__fadeInUp" data-bs-target="#carousel"
+            data-bs-slide-to="1">Comenzar</button>
+        </div>
+      </div></div>
+
+      <div data-section="1" class="carousel-item">
+        <div class="title-section">
+          <img src="images/vuela_icon_introduccion.svg" alt="Introducción" width="60">
+          <h1>Introducción</h1>
+        </div>
+        <div class="slide-container">
+          <div class="row row-cols-1 row-cols-md-2 align-items-stretch">
+            <div class="col justify-content-md-center">
+              <p>La administración pública se encuentra en un momento de <strong>transición tecnológica</strong> fundamental, donde la integración de la inteligencia artificial no constituye únicamente una mejora de las herramientas informáticas, sino un cambio en el paradigma de la prestación de servicios a la ciudadanía.</p>
+              <p>Esta píldora formativa, diseñada desde la perspectiva de la <strong>ciberseguridad</strong>, analiza la convergencia entre la innovación algorítmica y la seguridad, estableciendo las bases para que los profesionales del sector público comprendan, utilicen y protejan estos sistemas bajo un marco de excelencia ética y operativa.</p>
+            </div>
+            <div class="col d-flex flex-column">
+              <img src="images/content/img001.jpg" alt="Introducción a la IA en la administración pública">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div data-section="2" class="carousel-item">
+        <div class="title-section">
+          <img src="images/vuela_icon_objetivos.svg" alt="Objetivos" width="50">
+          <h1>Objetivos</h1>
+        </div>
+        <div class="slide-container">
+          <div class="row row-cols-1 row-cols-md-2 align-items-stretch">
+            <div class="col mb-0">
+              <img src="images/content/objetivos.png" alt="Objetivos">
+            </div>
+            <div class="col objetivos">
+              <p>Los objetivos formativos son:</p>
+              <ul>
+                <li>Identificar qué es la <strong>inteligencia artificial</strong> y diferenciar entre sus ramas principales, como el <strong>aprendizaje automático</strong>, el <strong>aprendizaje profundo</strong> y las capacidades específicas de los sistemas generativos frente a los predictivos.</li>
+                <li>Interiorizar los pilares de una inteligencia artificial fiable, que incluyen el <strong>respeto a la autonomía humana</strong>, la prevención de sesgos discriminatorios y la <strong>exigencia de transparencia</strong> y explicabilidad en cualquier actuación administrativa.</li>
+                <li>Ser capaz de <strong>detectar riesgos específicos del entorno algorítmico</strong>, como la inyección de instrucciones maliciosas, el envenenamiento de datos y el uso de contenidos ultrafalsos para la suplantación de identidad.</li>
+                <li>Adquirir habilidades para el <strong>uso responsable de modelos de lenguaje</strong>, aplicando protocolos que incluyan la <strong>anonimización de información confidencial</strong>, la formulación de comandos precisos y la validación crítica de los resultados para evitar alucinaciones.</li>
+              </ul>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <div data-section="3" class="carousel-item">
+        <div class="title-section">
+          <img src="images/vuela_icon_contenido.svg" alt="Contenido" width="60">
+          <h1>1. Fundamentos técnicos y conceptuales de la inteligencia artificial</h1>
+        </div>
+        <div class="slide-container">
+                <div class="destacado destacado-amarillo p-0">
+                <img src="images/vuela_icon_informacion.svg" alt="Información">
+                <div class="destacado-contenido">
+                  <p class="destacado-titulo">Concepto</p>
+                  <p class="destacado-texto">La IA es un conjunto de tecnologías que permiten a los sistemas informáticos analizar información, aprender de patrones de datos y realizar tareas que requerían capacidades cognitivas humanas (interpretación del lenguaje, toma de decisiones, reconocimiento visual).</p>
+                </div>
+              </div>
+          <div class="row">
+            <div class="col d-flex flex-column">
+              <p>Para una interacción segura con la IA, es clave entender que no es una entidad única, sino una <strong>familia de disciplinas técnicas</strong>. El aprendizaje automático es central, permitiendo que los algoritmos mejoren con la exposición a datos, hallando correlaciones estadísticas más allá de la programación lógica.</p>
+            </div>
+          </div>
+          <div class="row row-cols-1 row-cols-md-2 g-4 align-items-start mt-1">
+            <div class="col d-flex flex-column">
+              <h2 class="mt-4">Taxonomía del aprendizaje algorítmico</h2>
+              <p>El entrenamiento de los modelos se divide en diversas modalidades según la naturaleza del conjunto de datos y el objetivo de la intervención. En el sector público, cada modalidad encuentra un nicho específico de utilidad:</p>
+              <div class="accordion" id="acordeonTaxonomia">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#tax1" aria-expanded="true" aria-controls="tax1">Aprendizaje supervisado</button>
+                  </h2>
+                  <div id="tax1" class="accordion-collapse collapse show" data-bs-parent="#acordeonTaxonomia">
+                    <div class="accordion-body">Utiliza datos etiquetados para tareas como la detección de fraude fiscal, la clasificación de expedientes y el diagnóstico médico asistido.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tax2" aria-expanded="false" aria-controls="tax2">Aprendizaje no supervisado</button>
+                  </h2>
+                  <div id="tax2" class="accordion-collapse collapse" data-bs-parent="#acordeonTaxonomia">
+                    <div class="accordion-body">Busca estructuras en datos sin etiquetas, útil para la segmentación de beneficiarios de ayudas, la detección de anomalías y el descubrimiento de patrones de gasto público.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tax3" aria-expanded="false" aria-controls="tax3">Aprendizaje por refuerzo</button>
+                  </h2>
+                  <div id="tax3" class="accordion-collapse collapse" data-bs-parent="#acordeonTaxonomia">
+                    <div class="accordion-body">El sistema aprende mediante prueba y error (estímulos positivos/negativos), aplicable a la optimización de semáforos, la gestión de redes eléctricas y la coordinación de flotas de transporte público.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tax4" aria-expanded="false" aria-controls="tax4">Aprendizaje profundo</button>
+                  </h2>
+                  <div id="tax4" class="accordion-collapse collapse" data-bs-parent="#acordeonTaxonomia">
+                    <div class="accordion-body">Emplea redes neuronales multicapa para procesar datos complejos no estructurados, usándose en el reconocimiento de voz, el análisis de imágenes satelitales (urbanismo) y la traducción automática de documentos oficiales.</div>
+                  </div>
+                </div>
+              </div>
+              <p class="click mt-3">Pulsa en los botones para ver el contenido.</p>
+            </div>
+            <div class="col">
+              <h2>IA predictiva, IA generativa y modelos de lenguaje</h2>
+              <p>Otro concepto clave se basa en distinguir entre la inteligencia artificial (IA) predictiva, la IA generativa y modelos de lenguaje:</p>
+              <div class="d-sm-flex align-items-start">
+                <div class="nav flex-sm-column me-sm-3 col-sm-4" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                  <button class="tab-link active" id="tab-1" data-bs-toggle="pill" data-bs-target="#tab-1-cont" type="button" role="tab" aria-selected="true">IA predictiva</button>
+                  <button class="tab-link" id="tab-2" data-bs-toggle="pill" data-bs-target="#tab-2-cont" type="button" role="tab" aria-selected="false">IA generativa</button>
+                  <button class="tab-link" id="tab-3" data-bs-toggle="pill" data-bs-target="#tab-3-cont" type="button" role="tab" aria-selected="false">Modelos de lenguaje</button>
+                </div>
+                <div class="tab-content" id="v-pills-tabContent">
+                  <div class="tab-pane fade show active" id="tab-1-cont" role="tabpanel" tabindex="0">
+                    <span class="tab-title">IA predictiva</span><br>
+                    <p>Se centra en <strong>clasificar o pronosticar resultados</strong> basándose en datos históricos. Un ejemplo de su aplicación es el cálculo de la <strong>probabilidad</strong> de propagación de un incendio forestal bajo ciertas condiciones meteorológicas.</p>
+                  </div>
+                  <div class="tab-pane fade" id="tab-2-cont" role="tabpanel" tabindex="0">
+                    <span class="tab-title">IA generativa</span><br>
+                    <p>Constituye el avance más reciente y con mayor impacto mediático. Su función es la <strong>creación de contenido inédito</strong> (texto, imágenes, código o audio) a partir de instrucciones suministradas por el usuario. Esta capacidad de generación sintética plantea desafíos significativos en cuanto a la veracidad, dado que los modelos pueden incurrir en "alucinaciones": la producción de información errónea que, debido a su coherencia y rigor gramatical, puede resultar engañosa incluso para expertos.</p>
+                  </div>
+                  <div class="tab-pane fade" id="tab-3-cont" role="tabpanel" tabindex="0">
+                    <span class="tab-title">Modelos de lenguaje y procesamiento de la información</span><br>
+                    <p>Los modelos de lenguaje son el núcleo de los asistentes conversacionales modernos. Entrenados con vastas cantidades de texto, funcionan como complejos mecanismos de probabilidad para predecir secuencias de palabras. En la Administración Pública, generan borradores de documentos y facilitan la traducción.</p>
+                    <p>Su comprensión no es por reglas, sino por representaciones vectoriales (incrustaciones) que transforman palabras en coordenadas matemáticas. Esto permite una interpretación semántica avanzada (ej.: reconoce "ayuntamiento" y "consistorio" como sinónimos), resultando en interacciones ciudadanas más naturales y precisas.</p>
+                  </div>
+                </div>
+              </div>
+              <p class="click mt-2">Pulsa en las pestañas para ver el contenido.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div data-section="4" class="carousel-item">
+        <div class="title-section">
+          <img src="images/vuela_icon_contenido.svg" alt="Contenido" width="60">
+          <h1>2. El marco jurídico europeo</h1>
+        </div>
+        <div class="slide-container">
+          <div class="row row-cols-1 row-cols-md-2 align-items-stretch">
+            <div class="col">
+              <p>La seguridad en el uso de la inteligencia artificial no es opcional, sino que está estrictamente regulada por el <strong>Reglamento (UE) 2024/1689, de inteligencia artificial</strong>, la primera ley integral sobre esta materia a nivel mundial. Este marco normativo adopta un enfoque basado en el riesgo, lo que significa que las obligaciones legales para un organismo público serán más o menos estrictas dependiendo del <strong>impacto potencial del sistema</strong> sobre los derechos de las personas.</p>
+              <h2>Niveles de riesgo y sistemas prohibidos</h2>
+              <p>Todo responsable de su implantación en la administración debe estar al tanto de la clara <strong>progresión</strong> que estipula el Reglamento. Existen sistemas que plantean un riesgo inaceptable y que están prohibidos de forma tajante en la Unión Europea, como aquellos destinados a la <strong>puntuación social</strong> por parte del Estado (similares a los usados en regímenes autoritarios para restringir derechos según el comportamiento) o la <strong>vigilancia biométrica masiva</strong> en tiempo real en espacios públicos, salvo excepciones muy limitadas y bajo control judicial.</p>
+            </div>
+            <div class="col">
+              <h2>Obligaciones específicas para la administración pública</h2>
+              <p>Dado que la mayoría de las IA en el sector público son de alto riesgo, las administraciones (locales, autonómicas y estatales) deben implementar un <strong>sistema continuo de gestión de riesgos</strong>.</p>
+              <p>Además, el Reglamento exige la <strong>alfabetización en IA del personal</strong>, que debe formarse sobre sus capacidades, limitaciones y riesgos. En España, la AESIA supervisa el cumplimiento mediante guías técnicas para autodiagnósticos y planes de adaptación, buscando asegurar la legalidad y la confianza ciudadana.</p>
+              <img src="images/content/img008.jpg" alt="Marco jurídico europeo e inteligencia artificial" style="display:block; width:100%; height:auto;">
+            </div>
+          
+          
+          </div>
+        </div>
+      </div>
+
+      <div data-section="5" class="carousel-item">
+        <div class="title-section">
+          <img src="images/vuela_icon_contenido.svg" alt="Contenido" width="50">
+          <h1>3. Ética y responsabilidad en el uso de algoritmos públicos</h1>
+        </div>
+        <div class="slide-container">
+          <div class="row">
+            <div class="col">
+              <p>La aplicación de la inteligencia artificial en la administración pública no puede limitarse a la simple búsqueda de la eficiencia técnica. Es imperativo que se sustente en principios éticos ineludibles. La ética en la IA exige que su uso esté orientado a promover el bienestar social, previniendo activamente cualquier riesgo de perjuicio o discriminación.</p>
+            </div>
+          </div>
+          <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <div class="card">
+                      <img src="images/content/img002.jpg" class="card-img-top" alt="Autonomía humana">
+                      <div class="card-body">
+                        <h5 class="card-title">Respeto a la autonomía humana</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flip-card-back">
+                    <div class="card">
+                      <div class="card-body d-flex flex-column align-items-center">
+                        <h5 class="card-title">Respeto a la autonomía humana</h5>
+                        <p>La tecnología debe estar siempre subordinada a la supervisión de personas físicas. No se deben delegar decisiones administrativas finales en un algoritmo; la inteligencia artificial es una <strong>herramienta de apoyo</strong>, no un sustituto de la autoridad legal y moral del servidor público.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <div class="card">
+                      <img src="images/content/img003.jpg" class="card-img-top" alt="Prevencion del dano">
+                      <div class="card-body">
+                        <h5 class="card-title">Prevencion del daño</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flip-card-back">
+                    <div class="card">
+                      <div class="card-body d-flex flex-column align-items-center">
+                        <h5 class="card-title">Prevencion del daño</h5>
+                        <p>Los sistemas deben ser técnicamente sólidos y seguros frente a intentos de <strong>manipulación o ataques</strong>. Esto incluye la protección frente a sesgos que puedan llevar a decisiones injustas o discriminatorias para colectivos vulnerables.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <div class="card">
+                      <img src="images/content/img004.jpg" class="card-img-top" alt="Equidad y justicia">
+                      <div class="card-body">
+                        <h5 class="card-title">Equidad y justicia</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flip-card-back">
+                    <div class="card">
+                      <div class="card-body d-flex flex-column align-items-center">
+                        <h5 class="card-title">Equidad y justicia</h5>
+                        <p>Es fundamental que los datos de entrenamiento utilizados sean representativos y estén libres de sesgos históricos. Un algoritmo alimentado con <strong>datos sesgados</strong> inevitablemente perpetuará e incluso amplificará la discriminación en la adjudicación de servicios públicos, tales como ayudas, becas o la prestación de otros servicios.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <div class="card">
+                      <img src="images/content/img005.jpg" class="card-img-top" alt="Explicabilidad y transparencia">
+                      <div class="card-body">
+                        <h5 class="card-title">Explicabilidad y transparencia</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flip-card-back">
+                    <div class="card">
+                      <div class="card-body d-flex flex-column align-items-center">
+                        <h5 class="card-title">Explicabilidad y transparencia</h5>
+                        <p>Cualquier persona afectada por una actuación administrativa automatizada tiene el derecho de <strong>conocer la lógica que subyace a esa decisión</strong>. La opacidad de las “cajas negras” algorítmicas es incompatible con el Estado de derecho.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-2">
+            <p class="click">Pulsa sobre las tarjetas para ver el contenido.</p>
+          </div>
+          <div class="row mt-2">
+            <div class="col">
+              <h2>Gobernanza de datos: La base de la confianza</h2>
+              <p>La calidad de un sistema de inteligencia artificial está intrínsecamente ligada a la excelencia de los datos que lo alimentan. Por ello, la gobernanza de datos en el ámbito de la administración pública se establece como una <strong>exigencia ética y de seguridad</strong> fundamental. Es imprescindible que la gestión de estos datos siga rigurosamente el ciclo de integridad DICAT, asegurando:</p>
+              <ul>
+                <li>Disponibilidad.</li>
+                <li>Integridad.</li>
+                <li>Confidencialidad.</li>
+                <li>Autenticidad.</li>
+                <li>Trazabilidad.</li>
+              </ul>
+              <p>La fragmentación de la información entre distintos silos departamentales es uno de los mayores obstáculos para una inteligencia artificial segura. La creación de una <strong>oficina del dato</strong> y la aprobación de políticas de gobierno del dato en cada organismo son medidas organizativas necesarias para asegurar que la privacidad desde el diseño y por defecto no sea una frase vacía, sino una realidad técnica protegida por el Esquema Nacional de Seguridad.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div data-section="6" class="carousel-item">
+        <div class="title-section">
+          <img src="images/vuela_icon_contenido.svg" alt="Contenido" width="50">
+          <h1>4. Modelos de lenguaje pequeños y principales amenazas digitales basadas en IA</h1>
+        </div>
+        <div class="slide-container">
+          <div class="row row-cols-1 row-cols-md-2 align-items-stretch">
+            <div class="col d-flex flex-column">
+              <h2>Modelos de lenguaje pequeños y soberanía tecnológica</h2>
+              <p>La estrategia nacional de IA 2024 de España prioriza los modelos de lenguaje pequeños. Estos, aunque con menos parámetros que los comerciales, están muy <strong>especializados</strong> en tareas de la administración. Su ventaja clave es la seguridad: al poder <strong>ejecutarse en infraestructura pública</strong> (nube privada o local), garantizan que los datos de la ciudadanía permanezcan bajo control estatal.</p>
+              <img src="images/content/img007.jpg" alt="Modelos de lenguaje pequeños y soberanía tecnológica" style="display:block; width:100%; height:auto; margin-top:auto; padding-top:16px;">
+            </div>
+            
+            <div class="col d-flex flex-column">
+              <h2>Principales amenazas digitales basadas en IA</h2>
+              <p>La ciberseguridad es la base de la confianza en la administración digital. Actores maliciosos usan la IA para automatizar y sofisticar ataques. Es vital que la Administración Pública identifique y mitigue agresiones digitales que explotan vulnerabilidades de los algoritmos de IA:</p>
+              <div class="row">
+                <div class="col d-flex justify-content-center">
+                  <button type="button" class="btn-modal info" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <strong>Amenazas</strong>
+                  </button>
+
+                </div>
+              </div>
+              <p class="click mt-3">Pulsa en el botón para ampliar el contenido.</p>
+              <div class="row mt-auto pt-3">
+                <div class="col px-0">
+                  <img src="images/content/img006.jpg" alt="Amenazas digitales basadas en IA" style="display:block; width:100%; height:auto;">
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title" id="exampleModalLabel">Principales amenazas basadas en IA</h1>
+                <button type="button" class="btn-close btn-close-modal" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <ul>
+                  <li><strong>Inyección de instrucciones:</strong> el atacante camufla comandos maliciosos en consultas para robar información o forzar operaciones no autorizadas.</li>
+                  <li><strong>Envenenamiento de datos:</strong> compromiso de los datos de entrenamiento para introducir sesgos o crear "puertas traseras" activables por palabras clave.</li>
+                  <li><strong>Ataques adversarios:</strong> alteraciones mínimas en datos de entrada (imágenes, audio) que confunden al sistema de IA y provocan clasificaciones erróneas.</li>
+                  <li><strong><i>Deepfakes</i> (contenidos falsificados mediante IA) y suplantación de identidad:</strong> creación de imitaciones realistas de voces de funcionarios para autorizar fraudes o difundir desinformación.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-section="7" class="carousel-item">
+        <div class="title-section">
+          <img src="images/vuela_icon_contenido.svg" alt="Contenido" width="50">
+          <h1>5. Defensa proactiva y aplicación del ENS</h1>
+        </div>
+        <div class="slide-container">
+          <div class="row">
+            <div class="col">
+              <p>Ante este panorama, la defensa debe evolucionar de una postura reactiva a una proactiva. La inteligencia artificial también es una aliada en la protección: permite <strong>analizar billones de eventos de red en tiempo real</strong> para detectar anomalías que podrían indicar un ataque en curso.</p>
+              <p>En España, el Centro Criptológico Nacional (CCN-CERT) lidera esta defensa a través de la Red Nacional de SOC (Centros de Operaciones de Ciberseguridad), que integra las capacidades de todas las administraciones para <strong>bloquear amenazas de forma inmediata</strong> en todo el territorio nacional.</p>
+              <p>La implementación de cualquier sistema de inteligencia artificial en la administración pública española debe cumplir rigurosamente con el Esquema Nacional de Seguridad (ENS), regulado por el Real Decreto 311/2022. El ENS no es una recomendación, es un marco legal obligatorio que garantiza que los servicios electrónicos públicos sean seguros y confiables.</p>
+              <p>Para que un organismo público pueda desplegar una herramienta inteligente con garantías, debe seguir un procedimiento estructurado en cinco fases.</p>
+            </div>
+          </div>
+          <div style="position: relative;" class="col-md-8 mx-auto">
+            <img src="images/12345.png" width="100%" alt="Fases">
+
+            <button type="button" class="btn-modal-number" style="top: 24%; left:21%; width: 9%; height: 47%;"
+              data-bs-toggle="modal" data-bs-target="#ens1">&nbsp;</button>
+            <div class="modal fade" id="ens1" tabindex="-1" aria-labelledby="ens1Label" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title" id="ens1Label">1. Preparación y diagnóstico</h1>
+                    <button type="button" class="btn-close btn-close-modal" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Comienza identificando y registrando de manera exhaustiva todos los activos vinculados al sistema de inteligencia artificial, lo que incluye los modelos algorítmicos utilizados, el origen de los conjuntos de datos y los proveedores involucrados.</p>
+                    <p>Delimitar con precisión el alcance técnico y organizativo de la herramienta te permitirá asentar las bases del proyecto bajo el amparo directo de la Política de Seguridad de la Información de tu organización.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button type="button" class="btn-modal-number" style="top: 24%; left: 33%; width: 9%; height: 47%;"
+              data-bs-toggle="modal" data-bs-target="#ens2">&nbsp;</button>
+            <div class="modal fade" id="ens2" tabindex="-1" aria-labelledby="ens2Label" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title" id="ens2Label">2. Categorización del sistema</h1>
+                    <button type="button" class="btn-close btn-close-modal" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Clasifica la herramienta inteligente en los niveles Básico, Medio o Alto. Esta catalogación se determina evaluando rigurosamente el impacto potencial que un fallo de disponibilidad, una pérdida de confidencialidad o un incidente de seguridad podría llegar a tener sobre los derechos y la vida de la ciudadanía.</p>
+                    <p>Todo este proceso de evaluación debe quedar formalizado y fundamentado en el Informe de categorización del sistema.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button type="button" class="btn-modal-number" style="top: 24%; left: 45%; width: 9%; height: 47%;"
+              data-bs-toggle="modal" data-bs-target="#ens3">&nbsp;</button>
+            <div class="modal fade" id="ens3" tabindex="-1" aria-labelledby="ens3Label" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title" id="ens3Label">3. Análisis de riesgos</h1>
+                    <button type="button" class="btn-close btn-close-modal" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Identifica de forma proactiva las amenazas específicas asociadas a los entornos de inteligencia artificial, tales como la inyección de instrucciones no autorizadas (<i>prompt injection</i>), la presencia de sesgos discriminatorios en los resultados o las fugas de datos confidenciales.</p>
+                    <p>Evalúa minuciosamente su probabilidad de ocurrencia y el impacto de su daño, documentando los hallazgos en la Matriz de Riesgos y el correspondiente Informe de Análisis de Riesgos.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button type="button" class="btn-modal-number" style="top: 24%; left: 57%; width: 9%; height: 47%;"
+              data-bs-toggle="modal" data-bs-target="#ens4">&nbsp;</button>
+            <div class="modal fade" id="ens4" tabindex="-1" aria-labelledby="ens4Label" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title" id="ens4Label">4. Implementación de medidas</h1>
+                    <button type="button" class="btn-close btn-close-modal" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Aplica de manera práctica los controles técnicos y organizativos requeridos para mitigar los riesgos detectados previamente. Esto incluye salvaguardas esenciales como el cifrado avanzado de la información, la gestión estricta de perfiles y controles de acceso, la programación de auditorías periódicas y el establecimiento de mecanismos permanentes de supervisión y vigilancia humana.</p>
+                    <p>Los documentos clave en esta etapa son la Declaración de Aplicabilidad (DdA) y el Manual de procedimientos de seguridad.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button type="button" class="btn-modal-number" style="top: 24%; left: 69%; width: 9%; height: 47%;"
+              data-bs-toggle="modal" data-bs-target="#ens5">&nbsp;</button>
+            <div class="modal fade" id="ens5" tabindex="-1" aria-labelledby="ens5Label" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title" id="ens5Label">5. Auditoría y certificación</h1>
+                    <button type="button" class="btn-close btn-close-modal" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Somete el sistema a una rigurosa verificación externa ejecutada por una entidad independiente y formalmente acreditada.</p>
+                    <p>Esta prueba valida de forma objetiva que el despliegue de la inteligencia artificial cumple de principio a fin con todas las exigencias legales y operativas del Esquema Nacional de Seguridad (ENS), culminando con la exitosa obtención del Certificado de conformidad con el ENS.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="click mt-3">Pulsa en los botones para ver el contenido.</p>
+          <p>La ejecución rigurosa de estas cinco fases garantiza que la implantación de la inteligencia artificial en la administración pública no se perciba como un elemento de riesgo descontrolado, sino como un proceso supervisado, transparente y alineado con las garantías democráticas.</p>
+        
+        </div>
+      </div>
+
+      <div data-section="8" class="carousel-item">
+        <div class="title-section">
+          <img src="images/vuela_icon_objetivos.svg" alt="Conclusiones" width="50">
+          <h1>6. Conclusiones</h1>
+        </div>
+        <div class="slide-container">
+          <div class="row row-cols-1 row-cols-md-2 align-items-stretch">
+            <div class="col">
+              <p>La inteligencia artificial no es el futuro de la administración pública española; es su presente. Su capacidad para <strong>procesar información, predecir necesidades y optimizar recursos</strong> ofrece un potencial transformador que puede llevar los servicios públicos a cotas de eficiencia nunca vistas. No obstante, este poder debe ser gestionado con una responsabilidad proporcional a su impacto.</p>
+              <p>La ciberseguridad, lejos de ser un obstáculo para la innovación, es el cimiento sobre el cual se construye el edificio deg la administración digital. El cumplimiento del Esquema Nacional de Seguridad, el respeto al Reglamento Europeo de Inteligencia Artificial y la adopción de una ética algorítmica centrada en el ser humano no son solo obligaciones legales, sino compromisos con la ciudadanía.</p>
+            </div>
+            <div class="col">
+              <img src="images/content/resumen.png" alt="Resumen" class="imagen">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div data-section="9" class="carousel-item">
+        <div class="title-section">
+          <img src="images/vuela_icon_ejercicio.svg" alt="Webgrafia" width="50">
+          <h1>7. Webgrafía</h1>
+        </div>
+        <div class="slide-container">
+          <div class="row">
+            <div class="col">
+              <ul>
+                <li><a href="https://www.ehu.eus/es/web/adimen-artifiziala/glosario-esencial-de-t%C3%A9rminos-sobre-ia" target="_blank">Glosario esencial sobre terminos IA - Inteligencia artificial - EHU</a></li>
+                <li><a href="https://laboratorio.aepd.es/novedades/guia-practica-y-politicas-uso-ia-en-las-entidades-ocales" target="_blank">Guía práctica y políticas de uso de la IA en las entidades locales | LAB</a></li>
+                <li><a href="https://digitalrevolution.info/wp-content/uploads/2020/11/guia-uso-de-la-ia_en-el-sector-publico.pdf" target="_blank">Guía de uso de la Inteligencia Artificial en el Sector Público - DiGital ReVolution</a></li>
+                <li><a href="https://www.gobierto.es/blog/20190920-inteligencia-artificial-administracion-publica" target="_blank">Inteligencia Artificial en la Administración pública: casos de uso - Gobierto</a></li>
+                <li><a href="https://avance.digital.gob.es/sandbox-IA/Paginas/reglamento-IA.aspx" target="_blank">Reglamento IA - S.E. de Digitalización e Inteligencia Artificial y S.E. de Telecomunicaciones e Infraestructuras Digitales</a></li>
+                <li><a href="https://datos.gob.es/es/blog/slm-llm-rag-y-fine-tuning-pilares-de-la-ia-generativa-moderna" target="_blank">SLM, LLM, RAG y Fine-tuning: Pilares de la IA Generativa Moderna | datos.gob.es</a></li>
+                <li><a href="https://www.ionos.com/es-us/digitalguide/servidores/know-how/fine-tuning-vs-rag/" target="_blank">Fine tuning vs. RAG (Retrieval-Augmented Generation) - IONOS</a></li>
+                <li><a href="https://protecciondatos-lopd.com/empresas/esquema-nacional-de-seguridad/" target="_blank">Esquema Nacional de Seguridad (ENS): ¿Qué es y qué objetivo tiene? | Grupo Atico34</a></li>
+                <li><a href="https://www.boe.es/diario_boe/txt.php?id=BOE-A-2023-22767" target="_blank">BOE-A-2023-22767 Real Decreto 817/2023, de 8 de noviembre, que establece un entorno controlado de pruebas para el ensayo del cumplimiento de la propuesta de Reglamento del Parlamento Europeo y del Consejo por el que se establecen normas armonizadas en materia de inteligencia artificial.</a></li>
+              </ul>
+              <p class="click mt-3">Pulsa en los enlaces para ampliar contenido.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div data-section="10" class="carousel-item">
+        <div class="title-section">
+          <img src="images/vuela_bg_warning_decoration.svg" alt="Cierre" width="60">
+          <h1>Cierre</h1>
+        </div>
+        <div class="slide-container">
+          <div class="container">
+            <div class="row cierre align-items-center row-cols-1 row-cols-md-2">
+              <div class="col p-4 cierre-texto">
+                <h1 class="text-center">Enhorabuena</h1>
+                <h2 class="text-center mt-4">Has finalizado la píldora formativa.</h2>
+                <p class="text-center mt-4">Has recorrido el contenido completo del documento sobre uso ético y seguro de la inteligencia artificial en la administración pública, manteniendo su enfoque técnico, jurídico y de ciberseguridad.</p>
+                <p class="text-center mt-4"><strong>Recuerda: la innovación pública con IA solo genera confianza cuando se apoya en seguridad, transparencia, supervisión humana y buen gobierno del dato.</strong></p>
+              </div>
+              <div class="col align-self-end">
+                <img src="images/img_cierre.png" alt="Cierre">
+              </div>
+            </div>
+            <div class="row d-flex justify-content-center mt-5">
+              <div class="col-5">
+                <img src="images/vuela_bg_title_decoration.svg" alt="Decoracion cierre">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel-controls">
+    <button class="control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </div>
+
+  <div class="footer"><img src="images/vuela_pastilla_logos.svg" alt=""></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/ejercicios.js"></script>
+</body>
+
+</html>
+
+
