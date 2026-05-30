@@ -5,11 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Higiene digital en el puesto de trabajo moderno</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/vertical-carousel.css">
-  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="../css/vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/vendor/animate.min.css" />
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/vertical-carousel.css">
+  <link rel="stylesheet" href="../css/estilos.css">
 </head>
 
 <body>
@@ -19,13 +19,16 @@
     </a>
 
     <div class="course-description">
-      <div class="course-title">Higiene digital en el puesto de trabajo moderno</div>
     </div>
 
-    <div>
+    <div class="ms-auto">
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
         aria-controls="offcanvasMenu" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <svg class="navbar-toggler-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#64C8AA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
       </button>
     </div>
   </nav>
@@ -33,7 +36,7 @@
   <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
     <div class="offcanvas-header">
       <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menú</h5>
-      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"><svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="m5.00073 17.5864c-.3905.3906-.39044 1.0237.00012 1.4142s1.02372.3905 1.41421-.0001l5.58524-5.5862 5.5857 5.5857c.3905.3905 1.0237.3905 1.4142 0s.3905-1.0237 0-1.4142l-5.5858-5.5858 5.5854-5.58638c.3904-.39056.3904-1.02372-.0002-1.41421-.3905-.3905-1.0237-.39044-1.4142.00012l-5.5853 5.58627-5.58572-5.58579c-.39052-.39052-1.02369-.39052-1.41421 0-.39053.39053-.39053 1.02369 0 1.41422l5.58593 5.58587z" fill="#64C8AA" fill-rule="evenodd"></path></svg></button>
     </div>
     <div class="offcanvas-body">
       <ul class="navbar-nav">
@@ -77,18 +80,17 @@
       <!-- ============ 0. PORTADA / LANDING ============ -->
       <!-- TODO sustituir imagen/video de fondo: persona trabajando con portátil y móvil en casa (loop opcional) -->
       <div data-section="0" class="landing carousel-item active">
-        <div class="separador-amarillo"></div>
         <div class="slide-container">
           <div class="overlay" style="
     position: absolute;
+    top: 0;
+    left: 0;
     background: rgba(0,0,0,.5);
     height: 100%;
     width: 100%;
 ">
           <div class="animate__animated animate__fadeInRight">
             <p class="landing_title">Higiene digital en el puesto de trabajo moderno</p>
-            <p class="landing_subtitle">Teletrabajo seguro, VPN corporativa y protección de dispositivos móviles</p>
-            <p class="landing_text">Pequeños hábitos diarios para reducir riesgos en cada conexión.</p>
           </div>
           <button class="landing_btn animate__animated animate__fadeInUp" data-bs-target="#carousel"
             data-bs-slide-to="1">Comenzar</button>
@@ -98,7 +100,6 @@
       <!-- ============ 1. INTRODUCCIÓN (2 columnas + destacado 68%) ============ -->
       <div data-section="1" class="carousel-item">
         <div class="title-section">
-          <img src="images/vuela_icon_introduccion.svg" alt="Introducción" width="60">
           <h1>La ciberseguridad empieza en tus rutinas</h1>
         </div>
         <div class="slide-container">
@@ -109,11 +110,11 @@
             </div>
             <div class="col d-flex flex-column">
               <!-- TODO sustituir imagen: videollamada / teletrabajo -->
-              <img src="images/content/img001.jpg" alt="Teletrabajo y videollamada">
+              <img src="../images/content/img001.jpg" alt="Teletrabajo y videollamada">
             </div>
           </div>
           <div class="destacado destacado-amarillo p-0 mt-3">
-            <img src="images/vuela_icon_informacion.svg" alt="Información">
+            <img src="../images/vuela_icon_informacion.svg" alt="Información">
             <div class="destacado-contenido">
               <p class="destacado-titulo">Dato</p>
               <p class="destacado-texto">El <strong>68% de los incidentes</strong> afectan a ciudadanos y empleados de forma individual.</p>
@@ -130,14 +131,13 @@
       <!-- ============ 2. OBJETIVOS (imagen lateral + lista) ============ -->
       <div data-section="2" class="carousel-item">
         <div class="title-section">
-          <img src="images/vuela_icon_objetivos.svg" alt="Objetivos" width="50">
           <h1>Objetivos</h1>
         </div>
         <div class="slide-container">
           <div class="row row-cols-1 row-cols-md-2 align-items-stretch">
             <div class="col mb-0">
               <!-- TODO sustituir imagen: escritorio remoto ordenado con portátil, móvil y candado digital -->
-              <img src="images/content/objetivos.png" alt="Objetivos">
+              <img src="../images/content/objetivos.png" alt="Objetivos">
             </div>
             <div class="col objetivos">
               <p>Al finalizar esta píldora sabrás:</p>
@@ -156,12 +156,11 @@
       <!-- ============ 3. ¿QUÉ ES LA HIGIENE DIGITAL? (destacado concepto + texto + lista) ============ -->
       <div data-section="3" class="carousel-item">
         <div class="title-section">
-          <img src="images/vuela_icon_contenido.svg" alt="Contenido" width="60">
           <h1>¿Qué es la higiene digital?</h1>
         </div>
         <div class="slide-container">
           <div class="destacado destacado-amarillo p-0">
-            <img src="images/vuela_icon_informacion.svg" alt="Información">
+            <img src="../images/vuela_icon_informacion.svg" alt="Información">
             <div class="destacado-contenido">
               <p class="destacado-titulo">Concepto</p>
               <p class="destacado-texto">Higiene digital = <strong>hábitos diarios para reducir riesgos</strong>.</p>
@@ -187,7 +186,6 @@
       <!-- ============ 4. EL PUESTO DE TRABAJO REMOTO SEGURO (botones numerados sobre imagen + modales) ============ -->
       <div data-section="4" class="carousel-item">
         <div class="title-section">
-          <img src="images/vuela_icon_contenido.svg" alt="Contenido" width="50">
           <h1>El puesto de trabajo remoto seguro</h1>
         </div>
         <div class="slide-container">
@@ -197,10 +195,10 @@
             </div>
           </div>
           <!-- TODO sustituir imagen: infografía de escritorio remoto (portátil, router, móvil, documentos, pantalla bloqueada) con 5 zonas numeradas -->
-          <div style="position: relative;" class="col-md-8 mx-auto">
-            <img src="images/12345.png" width="100%" alt="Puesto de trabajo remoto: 5 puntos críticos">
+          <div class="img-mapa-container col-md-8 mx-auto">
+            <img src="../images/12345.png" width="100%" alt="Puesto de trabajo remoto: 5 puntos críticos">
 
-            <button type="button" class="btn-modal-number" style="top: 24%; left:21%; width: 9%; height: 47%;"
+            <button type="button" class="btn-modal-number btn-pos-1"
               data-bs-toggle="modal" data-bs-target="#punto1">&nbsp;</button>
             <div class="modal fade" id="punto1" tabindex="-1" aria-labelledby="punto1Label" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered">
@@ -216,7 +214,7 @@
               </div>
             </div>
 
-            <button type="button" class="btn-modal-number" style="top: 24%; left: 33%; width: 9%; height: 47%;"
+            <button type="button" class="btn-modal-number btn-pos-2"
               data-bs-toggle="modal" data-bs-target="#punto2">&nbsp;</button>
             <div class="modal fade" id="punto2" tabindex="-1" aria-labelledby="punto2Label" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered">
@@ -232,7 +230,7 @@
               </div>
             </div>
 
-            <button type="button" class="btn-modal-number" style="top: 24%; left: 45%; width: 9%; height: 47%;"
+            <button type="button" class="btn-modal-number btn-pos-3"
               data-bs-toggle="modal" data-bs-target="#punto3">&nbsp;</button>
             <div class="modal fade" id="punto3" tabindex="-1" aria-labelledby="punto3Label" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered">
@@ -248,7 +246,7 @@
               </div>
             </div>
 
-            <button type="button" class="btn-modal-number" style="top: 24%; left: 57%; width: 9%; height: 47%;"
+            <button type="button" class="btn-modal-number btn-pos-4"
               data-bs-toggle="modal" data-bs-target="#punto4">&nbsp;</button>
             <div class="modal fade" id="punto4" tabindex="-1" aria-labelledby="punto4Label" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered">
@@ -264,7 +262,7 @@
               </div>
             </div>
 
-            <button type="button" class="btn-modal-number" style="top: 24%; left: 69%; width: 9%; height: 47%;"
+            <button type="button" class="btn-modal-number btn-pos-5"
               data-bs-toggle="modal" data-bs-target="#punto5">&nbsp;</button>
             <div class="modal fade" id="punto5" tabindex="-1" aria-labelledby="punto5Label" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered">
@@ -287,7 +285,6 @@
       <!-- ============ 5. REDES: HOGAR, PÚBLICO Y VPN (pestañas) ============ -->
       <div data-section="5" class="carousel-item">
         <div class="title-section">
-          <img src="images/vuela_icon_contenido.svg" alt="Contenido" width="50">
           <h1>No todas las redes protegen igual</h1>
         </div>
         <div class="slide-container">
@@ -309,7 +306,7 @@
                     <span class="tab-title">Red doméstica</span><br>
                     <p>Puede ser adecuada para teletrabajar <strong>si está protegida</strong>. Usa una contraseña Wi-Fi robusta, evita compartirla sin control, mantén actualizado el router y separa, cuando sea posible, los dispositivos personales de los profesionales.</p>
                     <div class="destacado destacado-amarillo p-0 mt-2">
-                      <img src="images/vuela_icon_informacion.svg" alt="Consejo">
+                      <img src="../images/vuela_icon_informacion.svg" alt="Consejo">
                       <div class="destacado-contenido">
                         <p class="destacado-texto">Si el router conserva la contraseña de fábrica o no se actualiza desde hace años, tu entorno de trabajo puede estar más expuesto.</p>
                       </div>
@@ -319,7 +316,7 @@
                     <span class="tab-title">Red pública</span><br>
                     <p>Las redes de cafeterías, hoteles, estaciones o aeropuertos pueden ser útiles para navegar, pero <strong>no son recomendables para acceder a datos sensibles</strong> o herramientas internas sin protección adicional.</p>
                     <div class="destacado destacado-amarillo p-0 mt-2">
-                      <img src="images/vuela_icon_informacion.svg" alt="Consejo">
+                      <img src="../images/vuela_icon_informacion.svg" alt="Consejo">
                       <div class="destacado-contenido">
                         <p class="destacado-texto">Evita introducir credenciales corporativas en redes abiertas. Si no puedes evitar conectarte, usa la VPN corporativa y extrema la comprobación de páginas, enlaces y avisos.</p>
                       </div>
@@ -329,7 +326,7 @@
                     <span class="tab-title">VPN corporativa</span><br>
                     <p>La VPN crea un <strong>canal cifrado</strong> entre tu dispositivo y la organización. Ayuda a proteger la conexión cuando accedes a recursos internos desde fuera de la red corporativa.</p>
                     <div class="destacado destacado-amarillo p-0 mt-2">
-                      <img src="images/vuela_icon_informacion.svg" alt="Consejo">
+                      <img src="../images/vuela_icon_informacion.svg" alt="Consejo">
                       <div class="destacado-contenido">
                         <p class="destacado-texto">La VPN no sustituye al sentido común: sigue verificando enlaces, remitentes, permisos y avisos de seguridad.</p>
                       </div>
@@ -346,7 +343,6 @@
       <!-- ============ 6. VPN CORPORATIVA: USOS CORRECTOS E INCORRECTOS (flip cards) ============ -->
       <div data-section="6" class="carousel-item">
         <div class="title-section">
-          <img src="images/vuela_icon_contenido.svg" alt="Contenido" width="50">
           <h1>La VPN protege si se usa bien</h1>
         </div>
         <div class="slide-container">
@@ -362,7 +358,7 @@
                   <div class="flip-card-front">
                     <div class="card">
                       <!-- TODO sustituir imagen tarjeta -->
-                      <img src="images/content/img002.jpg" class="card-img-top" alt="Conectarse sin VPN">
+                      <img src="../images/content/img002.jpg" class="card-img-top" alt="Conectarse sin VPN">
                       <div class="card-body">
                         <h5 class="card-title">«Me conecto sin VPN porque va más rápido.»</h5>
                       </div>
@@ -385,7 +381,7 @@
                   <div class="flip-card-front">
                     <div class="card">
                       <!-- TODO sustituir imagen tarjeta -->
-                      <img src="images/content/img003.jpg" class="card-img-top" alt="Usar la VPN solo a veces">
+                      <img src="../images/content/img003.jpg" class="card-img-top" alt="Usar la VPN solo a veces">
                       <div class="card-body">
                         <h5 class="card-title">«Uso la VPN solo a veces.»</h5>
                       </div>
@@ -408,7 +404,7 @@
                   <div class="flip-card-front">
                     <div class="card">
                       <!-- TODO sustituir imagen tarjeta -->
-                      <img src="images/content/img004.jpg" class="card-img-top" alt="Compartir credenciales">
+                      <img src="../images/content/img004.jpg" class="card-img-top" alt="Compartir credenciales">
                       <div class="card-body">
                         <h5 class="card-title">«Comparto mis credenciales para que otra persona pueda entrar.»</h5>
                       </div>
@@ -431,7 +427,7 @@
                   <div class="flip-card-front">
                     <div class="card">
                       <!-- TODO sustituir imagen tarjeta -->
-                      <img src="images/content/img005.jpg" class="card-img-top" alt="Desactivar avisos de seguridad">
+                      <img src="../images/content/img005.jpg" class="card-img-top" alt="Desactivar avisos de seguridad">
                       <div class="card-body">
                         <h5 class="card-title">«Desactivo avisos de seguridad porque molestan.»</h5>
                       </div>
@@ -463,7 +459,6 @@
       <!-- ============ 7. DISPOSITIVOS MÓVILES (acordeón) ============ -->
       <div data-section="7" class="carousel-item">
         <div class="title-section">
-          <img src="images/vuela_icon_contenido.svg" alt="Contenido" width="50">
           <h1>El móvil también es puesto de trabajo</h1>
         </div>
         <div class="slide-container">
@@ -471,7 +466,7 @@
             <div class="col d-flex flex-column">
               <p>Desde el móvil leemos correos, recibimos <strong>códigos de verificación</strong>, accedemos a documentos y confirmamos operaciones. Por eso, su protección es tan importante como la del ordenador.</p>
               <!-- TODO sustituir imagen: persona consultando correo corporativo en el móvil -->
-              <img src="images/content/img007.jpg" alt="Uso del móvil corporativo" style="display:block; width:100%; height:auto; margin-top:auto; padding-top:16px;">
+              <img src="../images/content/img007.jpg" alt="Uso del móvil corporativo" class="img-contenido img-contenido--top-pad" >
             </div>
             <div class="col">
               <div class="accordion" id="acordeonMoviles">
@@ -529,7 +524,6 @@
       <!-- ============ 8. MICROCASO (botón + modal checklist) ============ -->
       <div data-section="8" class="carousel-item">
         <div class="title-section">
-          <img src="images/vuela_icon_ejercicio.svg" alt="Microcaso" width="50">
           <h1>Microcaso: «Solo era un correo desde casa»</h1>
         </div>
         <div class="slide-container">
@@ -548,7 +542,7 @@
             </div>
             <div class="col d-flex flex-column">
               <!-- TODO sustituir imagen: empleado con correo urgente durante videollamada en cafetería / Wi-Fi público -->
-              <img src="images/content/img006.jpg" alt="Correo urgente desde una red pública" style="display:block; width:100%; height:auto; margin-top:auto;">
+              <img src="../images/content/img006.jpg" alt="Correo urgente desde una red pública" class="img-contenido" >
             </div>
           </div>
         </div>
@@ -579,7 +573,6 @@
       <!-- ============ 9. CHECKLIST DE HIGIENE DIGITAL DIARIA (acordeón con listas) ============ -->
       <div data-section="9" class="carousel-item">
         <div class="title-section">
-          <img src="images/vuela_icon_contenido.svg" alt="Contenido" width="50">
           <h1>Checklist de higiene digital diaria</h1>
         </div>
         <div class="slide-container">
@@ -653,13 +646,13 @@
       <!-- ============ 10. ¿QUÉ HAGO SI SOSPECHO DE UN INCIDENTE? (destacado + botón modal pasos) ============ -->
       <div data-section="10" class="carousel-item">
         <div class="title-section">
-          <img src="images/vuela_bg_warning_decoration.svg" alt="Incidente" width="50">
+          <img src="../images/vuela_bg_warning_decoration.svg" alt="Incidente" width="50">
           <h1>¿Qué hago si sospecho de un incidente?</h1>
         </div>
         <div class="slide-container">
           <!-- TODO sustituir imagen de fondo opcional: alerta suave en pantalla de portátil -->
           <div class="destacado destacado-amarillo p-0">
-            <img src="images/vuela_icon_informacion.svg" alt="Aviso">
+            <img src="../images/vuela_icon_informacion.svg" alt="Aviso">
             <div class="destacado-contenido">
               <p class="destacado-titulo">Recuerda</p>
               <p class="destacado-texto"><strong>No lo ocultes. No improvises. Comunícalo rápido.</strong></p>
@@ -705,7 +698,6 @@
       <!-- ============ 11. RESUMEN (2 columnas + imagen) ============ -->
       <div data-section="11" class="carousel-item">
         <div class="title-section">
-          <img src="images/vuela_icon_objetivos.svg" alt="Resumen" width="50">
           <h1>Cinco hábitos clave</h1>
         </div>
         <div class="slide-container">
@@ -722,7 +714,7 @@
             </div>
             <div class="col">
               <!-- TODO sustituir imagen: escudo con portátil, móvil y nube -->
-              <img src="images/content/resumen.png" alt="Resumen" class="imagen">
+              <img src="../images/content/resumen.png" alt="Resumen" class="imagen">
             </div>
           </div>
         </div>
@@ -731,7 +723,6 @@
       <!-- ============ 12. WEBGRAFÍA Y RECURSOS ============ -->
       <div data-section="12" class="carousel-item">
         <div class="title-section">
-          <img src="images/vuela_icon_ejercicio.svg" alt="Webgrafía" width="50">
           <h1>Recursos recomendados</h1>
         </div>
         <div class="slide-container">
@@ -755,7 +746,7 @@
       <!-- ============ 13. CIERRE ============ -->
       <div data-section="13" class="carousel-item">
         <div class="title-section">
-          <img src="images/vuela_bg_warning_decoration.svg" alt="Cierre" width="60">
+          <img src="../images/vuela_bg_warning_decoration.svg" alt="Cierre" width="60">
           <h1>Cierre</h1>
         </div>
         <div class="slide-container">
@@ -769,12 +760,12 @@
               </div>
               <div class="col align-self-end">
                 <!-- TODO sustituir imagen: persona cerrando el portátil con sensación de control y seguridad -->
-                <img src="images/img_cierre.png" alt="Cierre">
+                <img src="../images/img_cierre.png" alt="Cierre">
               </div>
             </div>
             <div class="row d-flex justify-content-center mt-5">
               <div class="col-5">
-                <img src="images/vuela_bg_title_decoration.svg" alt="Decoracion cierre">
+                <img src="../images/vuela_bg_title_decoration.svg" alt="Decoracion cierre">
               </div>
             </div>
           </div>
@@ -792,12 +783,12 @@
     </button>
   </div>
 
-  <div class="footer"><img src="images/vuela_pastilla_logos.svg" alt=""></div>
+  <div class="footer"><img src="../images/vuela_pastilla_logos.svg" alt=""></div>
 
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-  <script src="js/config.js"></script>
-  <script src="js/ejercicios.js"></script>
+  <script src="../js/vendor/popper.min.js"></script>
+  <script src="../js/vendor/bootstrap.min.js"></script>
+  <script src="../js/config.js"></script>
+  <script src="../js/ejercicios.js"></script>
 </body>
 
 </html>

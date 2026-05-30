@@ -1,0 +1,1353 @@
+/* TIPOS */
+/* MAVEN PRO */
+@font-face {
+  font-family: 'Maven Pro';
+  src: url('../fonts/Maven/MavenPro-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Maven Pro';
+  src: url('../fonts/Maven/MavenPro-Bold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Maven Pro';
+  src: url('../fonts/Maven/MavenPro-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Maven Pro';
+  src: url('../fonts/Maven/MavenPro-Bold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: italic;
+}
+
+
+:root {
+  --blanco: #ffffff;
+  --negro: #000;
+  --color-primario: #64C8AA;
+  --color-primario-claro: #EDEDED;
+  --color-secundario-claro: #f8f8f8;
+  --color-secundario-oscuro: #33514f;
+
+  /* Neutros adicionales */
+  --color-negro: #000000;
+  --gris-borde: #aaaaaa;
+  --gris-scroll: #dee2e6;
+  --rojo: red;
+
+  /* Colores con transparencia (derivados de la paleta) */
+  --sombra-oscura: rgba(0, 0, 0, 0.8);
+  --blanco-translucido: rgba(255, 255, 255, 0.7);
+  --primario-translucido: rgba(100, 200, 170, 0.5); /* --color-primario al 50% */
+  --secundario-translucido: rgba(90, 16, 144, 0.35); /* --color-secundario-oscuro al 35% */
+}
+
+html,
+body,
+#carousel,
+.carousel-inner,
+.carousel-item {
+  height: 100%;
+}
+
+body {
+  background-color: var(--blanco);
+  color: var(--negro);
+  font-family: 'Maven Pro' !important;
+  font-weight: 400;
+}
+
+h1 {
+  font-family: 'Maven Pro';
+  color: var(--blanco);
+}
+
+h2,
+h3 {
+  font-family: 'Maven Pro';
+  color: var(--color-primario);
+}
+
+h4,
+h5,
+h6 {
+  font-family: 'Maven Pro';
+}
+
+p {
+  font-family: 'Maven Pro';
+  font-size: 1.2rem;
+  color: var(--negro);
+}
+
+a {
+  color: var(--color-secundario-oscuro) !important;
+}
+
+ul {
+  font-size: 1.2rem;
+  list-style: disc !important;
+}
+
+ol {
+  font-size: 1.2rem;
+  list-style: decimal !important;
+}
+
+.pie-imagen {
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+.imagen {
+  margin-bottom: 1rem;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+th, td {
+  border: 1px solid var(--gris-borde) !important;
+  padding: 10px !important; 
+}
+
+/* Estilo para las imágenes ampliables */
+.ampliable {
+  cursor: zoom-in;
+  transition: transform 0.3s;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Estilos para el visor de imagen ampliada */
+.visor {
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: var(--sombra-oscura);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 0.4s ease;
+  display: flex;
+}
+
+.visor.activo {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.visor img {
+  max-width: 90%;
+  max-height: 90%;
+  cursor: zoom-out;
+}
+
+.cerrar {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: var(--blanco);
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button {
+  background-color: var(--color-primario);
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--blanco);
+  z-index: 999;
+}
+
+.footer img {
+  max-height: 80px;
+  margin: 0 auto;
+}
+
+.logo {
+  background-image: url('../images/logo_positivo_.png');
+  height: 80px;
+  width: 210px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/* Navbar */
+
+.navbar-nav {
+  list-style: none !important;
+}
+
+.navbar {
+  height: 80px;
+  background-color: var(--blanco);
+}
+
+.navbar-end {
+  margin-right: 10px;
+}
+
+.course-description {
+  text-align: center;
+  width: 50%;
+}
+
+.course-title,
+.course-subtitle {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+}
+
+.course-title {
+  font-size: 1.8rem;
+  color: var(--color-primario);
+  font-family: 'Maven Pro';
+  font-weight: 700;
+}
+
+.course-subtitle {
+  font-size: 1rem;
+}
+
+/* Separador */
+.separador-amarillo {
+  height: 20px;
+  width: 100%;
+  background-color: var(--color-primario);
+}
+
+/* Controls */
+.carousel-controls {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: fixed;
+  bottom: 100px;
+  left: calc(50% - 50px);
+  height: 40px;
+  width: 100px;
+  background-color: var(--blanco-translucido);
+  border-radius: 0.5rem;
+  z-index: 999;
+}
+
+.control-prev,
+.control-next {
+  background: 0 0;
+  display: none;
+  border: 0;
+  padding: 0;
+  outline: none;
+  width: 32px;
+  height: 22px;
+  background-repeat: no-repeat;
+  animation: fadeOut 2s ease-out;
+}
+
+.control-prev {
+  background-image: url('../images/vuela_icon_chevron_up_primary.svg');
+  transition: background-image 200ms ease;
+}
+
+.control-prev:hover {
+  background-image: url('../images/vuela_icon_chevron_up_dark.svg');
+}
+
+.control-next {
+  background-image: url('../images/vuela_icon_chevron_down_primary.svg');
+  transition: background-image 200ms ease;
+}
+
+.control-next:hover {
+  background-image: url('../images/vuela_icon_chevron_down_dark.svg');
+}
+
+.control-next.show,
+.control-prev.show {
+  display: flex;
+  animation: fadeIn 0.2s ease-in;
+}
+
+/* Carousel */
+.carousel {
+  position: relative;
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.carousel-item {
+  height: 100%;
+  padding-top: 100px;
+}
+
+.carousel-item .slide-container {
+  padding: 50px 50px 170px 50px;
+  height: calc(100vh - 170px);
+  overflow-y: auto;
+  scrollbar-color: var(--gris-scroll) transparent;
+  scrollbar-width: thin;
+}
+
+/* carousel-indicators */
+.carousel-indicators [data-bs-target] {
+  background-color: var(--color-primario) !important;
+  border-top: 4px solid transparent !important;
+  border-bottom: 4px solid transparent !important;
+}
+
+.carousel-indicators .active {
+  opacity: 0.5 !important;
+  background-color: var(--color-secundario-oscuro) !important;
+}
+
+.vertical.carousel .carousel-indicators [data-bs-target] {
+  height: 15px !important;
+}
+
+.vertical.carousel .carousel-indicators {
+  top: 110px !important;
+}
+
+.img-fondo {
+  position: absolute;
+  background-image: url("../images/content/img012.jpg");
+  background-size: cover;
+  background-position: center;
+  top: 190px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  filter: opacity(0.5);
+}
+
+.txt-img-fondo {
+  position: relative;
+  z-index: 1;
+}
+
+/* paginador */
+.slider-container {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.slider-group {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.slider {
+  flex: 0 0 100%;
+  margin: 0;
+  height: 100%;
+  padding: 1rem;
+  background-color: var(--color-primario-claro);
+  border-radius: 1rem;
+}
+
+.slider-body {
+  overflow: hidden;
+}
+
+.active-slide {
+  display: block;
+}
+
+/* Mensaje click */
+.click {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 1rem;
+}
+
+
+.click::before {
+  content: '';
+  background: url('../images/vuela_icon_click.svg');
+  height: 2.6rem;
+  width: 3.2rem;
+  background-size: 2.6rem;
+  background-repeat: no-repeat;
+  background-position: right;
+  margin-right: 0.5rem;
+  padding: 1rem;
+}
+
+/* Slide */
+.landing .slide-container {
+  background-size: auto calc(100% - 100px);
+}
+
+/* Landing */
+.landing {
+  background-image: url('../images/portada.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.landing div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+}
+
+.landing_title {
+  font-family: 'Maven Pro', sans-serif;
+  font-weight: 600;
+  padding: 0;
+  margin-left: 100px;
+  font-size: 3.5rem;
+  line-height: 3.5rem;
+  color: var(--blanco);
+  text-transform: uppercase;
+}
+
+
+
+/* Alerta dentro de acordeones */
+.alerta {
+  border-left: 4px solid var(--color-primario);
+  padding: 0.5rem 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.landing_btn {
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 1.2rem;
+  background-color: var(--color-primario);
+  color: var(--color-secundario-oscuro);
+  padding: 0.5rem;
+  margin-left: 100px;
+  transition: background-color, color ease-in 0.2s;
+}
+
+.landing_btn:hover {
+  background-color: var(--color-secundario-oscuro);
+  color: var(--color-secundario-claro);
+  transition: background-color, color ease-in 0.2s;
+}
+
+/* Secciones */
+.title-section,
+.subtitle-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.title-section {
+  padding: 1rem;
+  background-color: var(--color-primario);
+}
+
+.subtitle-section {
+  padding: 0.5rem;
+  background-color: var(--color-primario-claro);
+}
+
+.subtitle-section h2 {
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.title-section h1 {
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 2.5rem;
+  color: var(--blanco);
+  text-align: center;
+}
+
+.title-section img,
+.subtitle-section img {
+  margin-right: 10px;
+}
+
+/* Objetivos */
+/* .objetivos {
+  display: flex;
+} */
+
+/* .objetivos img {
+  width: 60%;
+  margin: 0 auto;
+}
+ */
+.objetivos ul {
+  list-style-type: none !important;
+  padding: 0;
+}
+
+.objetivos li {
+  position: relative;
+  padding-left: 35px;
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.objetivos li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  background-image: url('../images/vuela_icon_list_1.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.objetivos li:nth-child(2)::before {
+  background-image: url('../images/vuela_icon_list_2.svg');
+}
+
+.objetivos li:nth-child(3)::before {
+  background-image: url('../images/vuela_icon_list_3.svg');
+}
+
+.objetivos li:nth-child(4)::before {
+  background-image: url('../images/vuela_icon_list_4.svg');
+}
+
+.objetivos li:nth-child(5)::before {
+  background-image: url('../images/vuela_icon_list_5.svg');
+}
+
+.objetivos li:nth-child(6)::before {
+  background-image: url('../images/vuela_icon_list_6.svg');
+}
+
+.objetivos li:nth-child(7)::before {
+  background-image: url('../images/vuela_icon_list_7.svg');
+}
+
+.objetivos li:nth-child(8)::before {
+  background-image: url('../images/vuela_icon_list_8.svg');
+}
+
+.objetivos li:nth-child(9)::before {
+  background-image: url('../images/vuela_icon_list_9.svg');
+}
+
+/* Pestañas */
+.tab-link {
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.6rem;
+  cursor: pointer;
+  background-color: var(--color-primario) !important;
+  color: var(--color-secundario-oscuro) !important;
+  padding: 0.5rem !important;
+  opacity: 1;
+  flex: 1;
+  transition: opacity 500ms ease !important;
+}
+
+.tab-link:hover {
+  opacity: 0.5 !important;
+  transition: opacity 500ms ease !important;
+}
+
+.tab-link.active {
+  background-color: var(--color-secundario-oscuro) !important;
+  color: var(--color-primario) !important;
+  transition: opacity 500ms ease !important;
+}
+
+.tab-title {
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 1.5rem;
+}
+
+/* Icons */
+.icons-group {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  text-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.icons-group img {
+  max-width: 6rem;
+}
+
+.icons-group dt {
+  border-right: 1px solid var(--color-secundario-oscuro);
+  padding: 0 2rem;
+}
+
+.icons-group dl:last-child dt {
+  border-right: none;
+}
+
+.icons-group dd {
+  opacity: 0;
+  transition: opacity 500ms ease;
+  padding: 1rem 2rem 0;
+}
+
+.icons-group dl {
+  flex: 1;
+}
+
+.icons-group dt {
+  cursor: pointer;
+}
+
+.icons-group .visited dt {
+  cursor: default;
+}
+
+.icons-group .visited img {
+  opacity: 0.7;
+}
+
+.icons-group .visited dd {
+  opacity: 1;
+}
+
+.icons-group dt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icons-group dt p {
+  font-family: 'Maven Pro';
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--color-secundario-oscuro);
+  margin: 1rem 0;
+}
+
+/* Destacado */
+.destacado {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  margin: 30px 0;
+}
+
+.destacado-gris {
+  background-color: var(--color-secundario-claro);
+}
+
+.destacado-amarillo {
+  background-color: var(--color-secundario-oscuro);
+  color: var(--blanco);
+}
+
+.destacado-amarillo .destacado-titulo,
+.destacado-amarillo .destacado-texto,
+.destacado-amarillo p {
+  color: var(--blanco);
+}
+
+.destacado-contenido {
+  margin-left: 0.5rem;
+  overflow: auto;
+}
+
+.destacado img {
+  width: 75%;
+  min-width: 150px;
+  max-width: 200px;
+  padding: 1rem 2rem;
+}
+
+.destacado-titulo {
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.destacado-texto {
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+/* Caja */
+.caja {
+  border: 2px solid var(--color-secundario-oscuro);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+/* Test */
+.question-section {
+  display: none;
+}
+
+.question-section.active {
+  display: block;
+}
+
+.feedback {
+  margin-top: 20px;
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 1.2rem;
+  display: none;
+}
+
+.feedback.correct {
+  display: block;
+  color: green;
+}
+
+.feedback.incorrect {
+  display: block;
+  color: var(--rojo);
+}
+
+input {
+  font-family: 'Maven Pro', sans-serif !important;
+}
+
+.test-btn {
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 1.2rem;
+  background-color: var(--color-primario);
+  color: var(--color-secundario-oscuro);
+  padding: 0.5rem;
+}
+
+.test-btn:disabled {
+  cursor: auto;
+  background-color: var(--color-secundario-claro);
+}
+
+.form-check-input {
+  cursor: pointer;
+  background-image: none !important;
+}
+
+.form-check-input:checked {
+  background-color: var(--color-primario) !important;
+  border-color: var(--color-secundario-oscuro) !important;
+}
+
+.form-check-label {
+  font-size: 1.1rem !important;
+}
+
+/* Ejercicio Arrastrar */
+.drop-zone {
+  width: 150px;
+  min-height: 180px;
+  border: 2px solid var(--color-negro);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-secundario-claro);
+  position: relative;
+  padding: 10px;
+  border-radius: 1rem;
+}
+
+.drop-zone img {
+  max-width: 100%;
+  height: auto;
+}
+
+.drop-zone p {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.drop-zone .draggable {
+  width: 100%;
+}
+
+.drop-zone.correct {
+  background-color: lightgreen !important;
+}
+
+.drop-zone.incorrect {
+  background-color: lightcoral !important;
+}
+
+.draggable {
+  width: 100%;
+  text-align: center;
+  margin-top: 5px;
+  background-color: var(--color-primario);
+  border-radius: 1rem;
+}
+
+
+/* Page nav */
+.page-link {
+  color: var(--color-secundario-oscuro) !important;
+}
+
+.page-link.active {
+  background-color: var(--color-primario) !important;
+  border-color: var(--color-secundario-oscuro) !important;
+}
+
+.page-link:focus {
+  box-shadow: none !important;
+  background-color: var(--color-primario) !important;
+}
+
+.pagination {
+  box-shadow: none !important;
+  list-style: none !important;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    display: none;
+  }
+
+  100% {
+    opacity: 1;
+    display: flex;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    display: flex;
+  }
+
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+/* Bootstrap Override*/
+.nav {
+  gap: 0.5rem;
+  margin-bottom: 0.5rem !important;
+}
+
+.navbar {
+  flex-wrap: nowrap !important;
+}
+
+.nav-link {
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 1rem !important;
+  cursor: pointer;
+  background-color: var(--color-primario) !important;
+  color: var(--color-secundario-oscuro) !important;
+  padding: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
+  opacity: 1;
+  transition: opacity 500ms ease;
+}
+
+.nav-link-children {
+  list-style: none !important;
+}
+
+.nav-link:hover {
+  background-color: var(--color-secundario-oscuro) !important;
+  color: var(--blanco) !important;
+  transition: background 500ms ease;
+}
+
+.nav-link.active {
+  background-color: var(--color-secundario-oscuro) !important;
+  color: var(--color-secundario-claro) !important;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+  background-color: var(--color-secundario-oscuro) !important;
+  color: var(--color-primario) !important;
+}
+
+.btn-close {
+  background-image: url('../images/vuela_icon_close.svg') !important;
+  opacity: 1 !important;
+  background-size: 2rem !important;
+  transition: opacity 500ms ease;
+  width: 1.5rem !important;
+}
+
+.btn-close-modal {
+  background-image: url('../images/vuela_icon_close_white.svg') !important;
+}
+
+.btn-close:hover {
+  opacity: 1 !important;
+}
+
+.navbar-toggler {
+  border: none !important;
+  background: none !important;
+  padding: 0.25rem !important;
+  transition: none !important;
+}
+
+.navbar-toggler:hover .navbar-toggler-icon line {
+  stroke: #33514f;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
+.navbar-toggler-icon {
+  background-image: none !important;
+  display: block;
+  transition: stroke 300ms ease;
+}
+
+.navbar-toggler-icon line {
+  transition: stroke 300ms ease;
+}
+
+/* Pestañas */
+.tab-content {
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 1.2rem;
+  border: 2px solid var(--color-secundario-oscuro);
+  padding: 1rem;
+  width: 100%;
+}
+
+/* Menu Lateral */
+.offcanvas-header {
+  background-color: var(--blanco);
+}
+
+.offcanvas-title {
+  font-family: 'Maven Pro', sans-serif;
+  color: var(--color-secundario-oscuro);
+}
+
+.offcanvas-header .btn-close {
+  background-image: none !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 300ms ease;
+}
+
+.offcanvas-header .btn-close:hover svg path {
+  fill: #33514f;
+  transition: fill 300ms ease;
+}
+
+.offcanvas.offcanvas-end {
+  width: 300px !important;
+}
+
+/* Accordion */
+.accordion-item {
+  color: var(--negro) !important;
+  background-color: var(--color-secundario-claro) !important;
+  border: 2px solid var(--color-secundario-oscuro) !important;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--color-primario) !important;
+  color: var(--blanco) !important;
+}
+
+.accordion-button {
+  font-family: 'Maven Pro', sans-serif !important;
+  font-size: 1.5rem !important;
+  color: var(--color-primario) !important;
+  background-color: var(--blanco) !important;
+}
+
+.accordion-button:focus {
+  box-shadow: none !important;
+}
+
+.accordion-button::after {
+  background-image: url('../images/vuela_icon_chevron_down.svg') !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url('../images/vuela_icon_chevron_down_white.svg') !important;
+}
+
+.accordion-body {
+  font-family: 'Maven Pro', sans-serif !important;
+  font-size: 1.2rem !important;
+}
+
+
+/* Modal */
+.btn-modal {
+  font-family: 'Maven Pro', sans-serif !important;
+  font-size: 1.2rem !important;
+  color: var(--negro) !important;
+  background-color: var(--color-primario) !important;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  transition: opacity 500ms ease;
+}
+
+.btn-modal::before {
+  content: '';
+  background: url('../images/vuela_icon_plus.svg');
+  background-repeat: no-repeat;
+  height: 1.6rem;
+  width: 1.6rem;
+  display: inline-block;
+  margin-right: 0.5rem;
+  padding: 1rem;
+}
+
+.btn-modal.sabias::before {
+  background: url('../images/vuela_icon_objetivos.svg');
+}
+
+.btn-modal.info {
+  color: var(--blanco) !important;
+}
+
+.btn-modal.info::before {
+  background: url('../images/vuela_icon_plus_white.svg');
+  background-repeat: no-repeat;
+}
+
+.btn-modal:hover {
+  opacity: 0.5;
+  transition: opacity 500ms ease;
+}
+
+.btn-modal-number {
+  position: absolute;
+  top: 24%;
+  width: 9%;
+  height: 47%;
+  border-radius: 1rem;
+  background-color: transparent !important;
+  border: none !important;
+}
+.btn-pos-1 { left: 21%; }
+.btn-pos-2 { left: 33%; }
+.btn-pos-3 { left: 45%; }
+.btn-pos-4 { left: 57%; }
+.btn-pos-5 { left: 69%; }
+
+.img-mapa-container {
+  position: relative;
+}
+
+.img-contenido {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.img-contenido--top-pad {
+  margin-top: auto;
+  padding-top: 16px;
+}
+
+.modal-header {
+  background-color: var(--color-primario) !important;
+  padding: 1rem !important;
+}
+
+.modal-header h1 {
+  font-family: 'Maven Pro', sans-serif !important;
+  font-size: 2rem !important;
+  color: var(--blanco) !important;
+  line-height: 2.2rem;
+}
+
+.modal-body {
+  font-family: 'Maven Pro', sans-serif !important;
+  font-size: 1.2rem !important;
+  padding: 1.2rem !important;
+}
+
+/* Tarjetas */
+.flip-card {
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  border: 1px solid var(--color-secundario-oscuro);
+  border-radius: 0.500rem;
+}
+
+.flip-card-inner.flipped {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  
+  backface-visibility: hidden;
+  overflow: auto;
+  scrollbar-color: var(--gris-scroll) transparent;
+  scrollbar-width: thin;
+}
+
+.flip-card-front {
+  color: var(--color-negro);
+}
+
+.flip-card-back {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  color: var(--blanco);
+  transform: rotateY(180deg);
+}
+
+.card-img-top {
+  max-height: 280px;
+  object-fit: cover;
+  border-top-left-radius: none !important;
+  border-top-right-radius: none !important;
+}
+
+.card-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.card {
+  border: none !important;
+  background-color: transparent !important;
+}
+.card.shadow-lg {
+  box-shadow: 0 1rem 3rem var(--secundario-translucido) !important;
+}
+
+.card p,
+.card p strong,
+.card .form-check-label,
+.card ul,
+.card li,
+.card li strong {
+  color: var(--color-secundario-oscuro) !important;
+}
+
+.card ul,
+.card li {
+  text-align: left;
+}
+
+.card-title {
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 1.5rem;
+  color: var(--color-secundario-oscuro) !important;
+}
+
+.card-text {
+  text-align: left;
+}
+
+/* Cierre */
+.cierre {
+  background-color: var(--color-secundario-oscuro);
+}
+
+.cierre-texto,
+.cierre-texto h1,
+.cierre-texto h2,
+.cierre-texto p {
+  color: var(--blanco) !important;
+}
+
+@media (max-width: 768px) {
+
+  .logo {
+    width: 200px;
+    height: 75px;
+  }
+
+  .nav-link {
+    font-size: 1rem !important;
+  }
+
+  .navbar {
+    height: 76px;
+  }
+
+  .carousel-item {
+    height: 100%;
+    padding-top: 75px;
+  }
+
+  .carousel-controls {
+    bottom: 75px;
+  }
+
+  .course-description {
+    width: 33%;
+  }
+
+  .landing .slide-container {
+    background-size: auto calc(100% - 75px);
+  }
+
+  /* Landing */
+  .landing {
+    background-image: url('../images/portada.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .icons-group {
+    flex-direction: column;
+  }
+
+  .icons-group dt {
+    border-right: none;
+  }
+
+  .destacado {
+    flex-direction: column;
+  }
+
+  .destacado-titulo,
+  .destacado-texto {
+    text-align: center;
+  }
+
+  .landing div {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .course-title {
+    font-size: 1rem;
+  }
+
+  .course-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .title-section h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0;
+  }
+
+  .subtitle-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0;
+  }
+
+  .navbar-toggler {
+    font-size: 1.5rem !important;
+  }
+
+  .objetivos img {
+    width: 100%;
+  }
+
+  .img-fondo {
+    top: 165px;
+  }
+
+}
+
+@media (max-width: 576px) {
+
+  .carousel-controls {
+    bottom: 55px;
+  }
+  
+  .title-section {
+    padding: 0.5rem
+  }
+
+  .title-section h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0;
+  }
+
+  .title-section img {
+    display: none;
+  }
+
+  .subtitle-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+  }
+
+  .landing_title {
+    font-size: 3rem;
+    line-height: 2.8rem;
+  }
+
+
+
+}
+
+@media (max-width: 385px) {
+  .logo {
+    width: 107px;
+    height: 75px;
+    background-image: url('../images/vuela_logo_solo.svg');
+  }
+
+  .course-description {
+    width: 30%;
+  }
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 75% !important;
+  }
+}
