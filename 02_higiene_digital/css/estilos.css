@@ -523,21 +523,36 @@ button {
   display: flex;
 } */
 
-/* .objetivos img {
-  width: 60%;
-  margin: 0 auto;
+/* Imagen del apartado Objetivos */
+.col-img-objetivos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
- */
+
+.img-objetivos {
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  margin: auto;
+  object-fit: contain;
+}
+
 .objetivos ul {
   list-style-type: none !important;
   padding: 0;
+}
+
+.objetivos p {
+  font-size: 1.3rem;
 }
 
 .objetivos li {
   position: relative;
   padding-left: 35px;
   font-family: 'Maven', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   margin-bottom: 0.5rem;
 }
 
