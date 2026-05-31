@@ -412,7 +412,7 @@ button {
 
 /* Landing */
 .landing {
-  background-image: url('../images/portada.jpg');
+  /* La portada la fija cada píldora en su <style> inline (background-image) */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1253,7 +1253,6 @@ input {
 
   /* Landing */
   .landing {
-    background-image: url('../images/portada.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
