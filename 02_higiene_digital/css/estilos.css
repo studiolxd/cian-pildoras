@@ -188,10 +188,11 @@ button {
 
 .logo {
   background-image: url('../images/logo_positivo_.png');
-  height: 80px;
-  width: 210px;
+  height: 130px;
+  width: 340px;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-position: left center;
 }
 
 
@@ -202,7 +203,7 @@ button {
 }
 
 .navbar {
-  height: 80px;
+  height: 140px;
   background-color: var(--blanco);
 }
 
@@ -303,7 +304,7 @@ button {
 
 .carousel-item {
   height: 100%;
-  padding-top: 100px;
+  padding-top: 130px;
 }
 
 .carousel-item .slide-container {
@@ -331,7 +332,7 @@ button {
 }
 
 .vertical.carousel .carousel-indicators {
-  top: 110px !important;
+  top: 140px !important;
 }
 
 .img-fondo {
@@ -716,6 +717,18 @@ button {
   font-family: 'Maven Pro', sans-serif;
   font-size: 1.5rem;
   margin: 0;
+}
+
+.destacado-fuente {
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 1rem;
+  margin: 0.3rem 0 0;
+}
+
+.destacado-amarillo .destacado-fuente a {
+  color: var(--blanco) !important;
+  text-decoration: underline;
+  opacity: 0.85;
 }
 
 /* Caja */
@@ -1162,7 +1175,7 @@ input {
 }
 
 .card-img-top {
-  max-height: 280px;
+  height: 280px;
   object-fit: cover;
   border-top-left-radius: none !important;
   border-top-right-radius: none !important;
@@ -1222,8 +1235,8 @@ input {
 @media (max-width: 768px) {
 
   .logo {
-    width: 200px;
-    height: 75px;
+    width: 270px;
+    height: 110px;
   }
 
   .nav-link {
@@ -1231,12 +1244,12 @@ input {
   }
 
   .navbar {
-    height: 76px;
+    height: 120px;
   }
 
   .carousel-item {
     height: 100%;
-    padding-top: 75px;
+    padding-top: 100px;
   }
 
   .carousel-controls {
@@ -1248,7 +1261,7 @@ input {
   }
 
   .landing .slide-container {
-    background-size: auto calc(100% - 75px);
+    background-size: auto calc(100% - 100px);
   }
 
   /* Landing */
@@ -1348,8 +1361,8 @@ input {
 
 @media (max-width: 385px) {
   .logo {
-    width: 107px;
-    height: 75px;
+    width: 130px;
+    height: 90px;
     background-image: url('../images/vuela_logo_solo.svg');
   }
 

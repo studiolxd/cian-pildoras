@@ -1,0 +1,43 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Add-Type -AssemblyName System.Drawing; $img = [System.Drawing.Image]::FromFile\\(\"c:\\\\Users\\\\ivanm\\\\OneDrive\\\\Documentos\\\\GitHub\\\\cian-pildoras\\\\01_uso_etico_y_seguro_de_la_ia\\\\images\\\\logo_positivo_.png\"\\); \"Width: $\\($img.Width\\)px, Height: $\\($img.Height\\)px\"; $img.Dispose\\(\\))",
+      "Skill(deep-research)",
+      "Skill(deep-research:*)",
+      "Workflow(deep-research)",
+      "WebSearch",
+      "WebFetch(domain:www.incibe.es)",
+      "WebFetch(domain:www.lksnext.com)",
+      "WebFetch(domain:www.verizon.com)",
+      "WebFetch(domain:www.enisa.europa.eu)",
+      "WebFetch(domain:www.sans.org)",
+      "WebFetch(domain:www.helpnetsecurity.com)",
+      "WebFetch(domain:securitydelta.nl)",
+      "WebFetch(domain:www.escudodigital.com)",
+      "WebFetch(domain:www.techtarget.com)",
+      "WebFetch(domain:www.infosecurity-magazine.com)",
+      "WebFetch(domain:www.securitymagazine.com)",
+      "WebFetch(domain:enisa.europa.eu)",
+      "WebFetch(domain:www.csoonline.com)",
+      "WebFetch(domain:www.darkreading.com)",
+      "WebFetch(domain:www.bleepingcomputer.com)",
+      "Bash(python -c ' *)",
+      "WebFetch(domain:www.ibm.com)",
+      "WebFetch(domain:www.proofpoint.com)",
+      "WebFetch(domain:www.redseguridad.com)",
+      "WebFetch(domain:www.infordisa.com)",
+      "WebFetch(domain:portal.mineco.gob.es)",
+      "WebFetch(domain:www.intricom.es)",
+      "WebFetch(domain:www.adservice.me)",
+      "WebFetch(domain:www.newtral.es)",
+      "Bash(start \"\" \"c:\\\\Users\\\\ivanm\\\\OneDrive\\\\Documentos\\\\GitHub\\\\cian-pildoras\\\\02_higiene_digital\\\\index.html\")",
+      "Bash(npx playwright *)",
+      "Read(//c/Users/ivanm/AppData/Local/Temp/**)",
+      "Read(//tmp/**)",
+      "Read(//c/tmp/**)",
+      "Bash(node /tmp/check_destacado3.js)",
+      "Bash(node /tmp/check_bottom.js)",
+      "Bash(node /tmp/debug2.js)"
+    ]
+  }
+}
